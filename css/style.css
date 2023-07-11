@@ -10,6 +10,7 @@ body {
     background-color: #F7F7F7;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,6 +20,10 @@ a {
 
 a:hover {
     transition: all 0.4s ease;
+}
+
+main {
+    padding: 80px 0px 80px 0px;
 }
 
 .menu {
@@ -149,4 +154,95 @@ a:hover {
     line-height: 120%;
     width: 1090px;
     margin: 0 auto;
+}
+
+.main__content-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+
+}
+
+.main__content-link {
+    border: 2px solid #4F8FF0;
+    background: #4F8FF0;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.main__content-link:hover {
+    border: 2px solid #4F8FF0;
+    background: #FFFFFF;
+    color: #4F8FF0;
+}
+
+.services {
+    text-align: center;
+}
+
+.services__title {
+    color: #222222;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.services__hr {
+    background-color: #4F8FF0;
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+}
+
+.services__par {
+    margin: 0 auto;
+    width: 920px;
+    padding: 24px 0px 48px 0px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.services__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin:0 80px 0 80px;
+}
+
+.services__item {
+    display: grid;
+    gap: 15px;
+    padding: 50px 32px;
+    background-color: #FFFFFF;
+}
+
+.services__img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.services__subtitle {
+    color: #222222;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.services__span {
+    max-width: 360px;
+    color: #222222;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
 }
