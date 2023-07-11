@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover {
+    transition: all 0.4s ease;
+}
+
+.menu {
+    background-color: #010101;
+    padding: 16px 69px 16px 69px;
+}
+
+.top__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__menu__contacts {
+    display: flex;
+    gap: 28px;
+}
+
+.top__menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.top__menu-img {
+    padding-right: 8px;
+    align-items: center;
+}
+
+.top__menu-link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.top__menu_button {
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: #4F8FF0;
+    background-color: #010101;
+}
+
+.top__menu_button:hover {
+    color: #E6E6E6;
+    cursor: pointer;
+}
+
+.main__menu {
+    background-image: url(../img/menu__bg.svg);
+}
+
+.main__menu__content {
+    background-color: rgba(1, 1, 1, 0.76);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 69px 28px 69px;
+}
+
+.main__menu-par {
+    color: #4F8FF0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+.main__menu-span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.main__menu-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding-top: 20px;
+}
+
+.main__menu-list>li>a {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.main__menu-list>li>a:hover {
+    text-decoration-line: underline;
+    color: #4F8FF0;
+}
