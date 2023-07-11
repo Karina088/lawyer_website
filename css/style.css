@@ -228,7 +228,7 @@ main {
 
 .services__item:hover {
     background-color: #4F8FF0;
-    background-image: url(../img/services/hover_border.svg);
+    /* background-image: url(../img/services/hover_border.svg); */
     cursor: pointer;
 }
 
