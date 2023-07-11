@@ -215,7 +215,7 @@ main {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    margin:0 80px 0 80px;
+    margin: 0 80px 0 80px;
 }
 
 .services__item {
@@ -223,6 +223,25 @@ main {
     gap: 15px;
     padding: 50px 32px;
     background-color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.services__item:hover {
+    background-color: #4F8FF0;
+    background-image: url(../img/services/hover_border.svg);
+    cursor: pointer;
+}
+
+.services__item:hover>.services__subtitle {
+    color: #FFFFFF;
+}
+
+.services__item:hover>.services__span {
+    color: #FFFFFF;
+}
+
+.services__item:hover .services__img svg path {
+    fill: #FFFFFF;
 }
 
 .services__img {
