@@ -9,7 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet">
-    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.css">
+    <title>Правозащитник | Юридическая компания</title>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
         </div>
     </header>
 
-    <main>
+<main>
         <div class="services">
             <h3 class="services__title">Наши услуги</h3>
             <div class="services__hr"></div>
@@ -197,8 +198,98 @@
                 <div class="lawyers__hr"></div>
                 <p class="lawyers__par">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
             </div>
+      
+          <swiper-container>         
+            <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">       
+        <div class="lawyers__item lawyers-swaper">
 
-            <div class="lawyers__card">
+            <div class="lawyers__content">
+                <div class="lawyers__img">
+                    <img src="./img/lawyers/1.svg" alt="фотография адвоката">
+                </div>
+
+                <div class="lawyers__name">
+                 <h5 class="lawyers__subtitle">Горюнова Полина Алексеевна</h5>
+                 <p class="lawyers__post">Юрист международного права</p>
+                 <span class="lawyers__span-hidden"></span>
+                 <p class="lawyers__par-hidden"></p>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="lawyers__item lawyers-swaper">
+         <div class="lawyers__content">
+                <div class="lawyers__img">
+                    <img src="./img/lawyers/2.svg" alt="фотография адвоката">
+                </div>
+
+                <div class="lawyers__name">
+                 <h5 class="lawyers__subtitle">Миронов Александр Германович</h5>
+                 <p class="lawyers__post">Кредитный адвокат, банковский юрист</p>
+                 <span class="lawyers__span-hidden"></span>
+                 <p class="lawyers__par-hidden"></p>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="lawyers__item lawyers-swaper">
+
+            <div class="lawyers__content">
+                <div class="lawyers__img">
+                    <img src="./img/lawyers/1.svg" alt="фотография адвоката">
+                </div>
+
+                <div class="lawyers__name">
+                 <h5 class="lawyers__subtitle">Шестакова Елизавета Егоровна</h5>
+                 <p class="lawyers__post">Юридический консультант</p>
+                 <span class="lawyers__span-hidden"></span>
+                 <p class="lawyers__par-hidden"></p>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="lawyers__item lawyers-swaper">
+
+            <div class="lawyers__content">
+                <div class="lawyers__img">
+                    <img src="./img/lawyers/3.svg" alt="фотография адвоката">
+                </div>
+
+                <div class="lawyers__name">
+                 <h5 class="lawyers__subtitle">Архипов Максим Константинович</h5>
+                 <p class="lawyers__post">Корпоративный юрист</p>
+                 <span class="lawyers__span-hidden"></span>
+                 <p class="lawyers__par-hidden"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+
+          </swiper-container>   
+
+         <div class="lawyers__card">
 
                 <div class="lawyers__item">
 
@@ -268,16 +359,18 @@
                     </div>
                 </div>
               
-            </div>
+         </div>
 
         </div>
 
-
-    </main>
+</main>
 
 
     <footer></footer>
     <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js" integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/swiper.js"></script>
+
 </body>
 
 </html>

@@ -58,6 +58,15 @@ main {
     line-height: 120%;
 }
 
+.top__menu-icon:hover>img {
+    transform: scale(1) translate(10%, 10%);
+    transition: all .5s;
+} 
+.top__menu-link:hover {
+    text-decoration: underline;
+    color: #4F8FF0;
+}
+
 .top__menu_button {
     border: none;
     font-size: 14px;
@@ -171,6 +180,7 @@ main {
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+    transition: all .7s ease-in-out;
 }
 
 .main__content-link:hover {
@@ -369,11 +379,10 @@ color: #222222;
 .lawyers__item {
     background-color: #FFFFFF;
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
-    
+    transition: all .4s ease-in-out;
 }
 
 .lawyers__content {
-  transition: all 0.5s ease;
   width: 312px;
 }
 
@@ -389,6 +398,7 @@ color: #222222;
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name {
     padding: 83px 0;
+    transition: all .7s ease-in-out;
 }
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__subtitle, 
@@ -441,4 +451,12 @@ font-size: 14px;
 font-weight: 300;
 line-height: 120%;
 text-transform: lowercase;
+}
+
+.swiper-wrapper {
+   
+}
+
+.lawyers-swaper {
+    width: 312px;
 }
