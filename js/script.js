@@ -1,8 +1,10 @@
 'use strict';
 
-const linkEl = document.querySelector('.link');
-const linkServices = document.querySelector('.link-services');
-const serviceEl = document.querySelector('.services');
+const linkEl = document.querySelector('.link')
+const linkServices = document.querySelector('.link-services')
+const serviceEl = document.querySelector('.services')
+const linkCompany = document.querySelector('.company-link')
+const aboutCompanyEl = document.querySelector('.about__company')
 
 // навигация по сайту
 function scrollTo(element) {
@@ -14,10 +16,13 @@ function scrollTo(element) {
 }
 
 linkEl.addEventListener('click', () => {
-    scrollTo(serviceEl);
-});
+    scrollTo(serviceEl)
+})
 
 linkServices.addEventListener('click', () => {
-    scrollTo(serviceEl);
-});
+    scrollTo(serviceEl)
+})
 
+linkCompany.addEventListener('click', () => {
+    scrollTo(aboutCompanyEl)
+ })

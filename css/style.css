@@ -159,8 +159,7 @@ main {
 .main__content-btn {
     display: flex;
     justify-content: center;
-    padding-top: 48px;
-
+    padding: 48px 0 80px 0;
 }
 
 .main__content-link {
@@ -193,7 +192,7 @@ main {
     padding-bottom: 10px;
 }
 
-.services__hr {
+.services__hr, .lawyers__hr {
     background-color: #4F8FF0;
     margin: 0 auto;
     width: 50px;
@@ -264,4 +263,78 @@ main {
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
+}
+
+.about__company {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 80px 0 80px 0;
+    justify-content: space-evenly;
+}
+
+.about__company__content {}
+
+.about__company-titlle {
+color: #222222;
+font-size: 28px;
+font-weight: 800;
+line-height: 150%;
+text-transform: uppercase;
+padding-bottom: 10px;
+}
+.about__company-span {
+    color: #4F8FF0;
+}
+.about__company-hr {
+    width: 50px;
+    height: 3px;
+    background-color: #4F8FF0;
+    display: flex;
+    justify-content: start;
+}
+.about__company-par {
+    width: 720px;
+    padding-top: 24px;
+color: #222222;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+}
+.about__company__links {
+    display: flex;
+align-items: flex-start;
+gap: 24px;
+margin-top: 32px;
+}
+
+.about__company__links>a {
+    padding: 16px 24px;
+    text-align: center;
+font-size: 14px;
+font-weight: 900;
+line-height: 120%;
+text-transform: uppercase;
+}
+.about__company__links>a:hover {
+    background-color: #FFFFFF;
+}
+
+.about__company-link {
+    border: 2px solid #4F8FF0;
+background-color: #4F8FF0;
+}
+
+.about__company-link:hover {
+    color: #4F8FF0;
+} 
+
+.about__company-reference {
+    border: 2px solid #E6E6E6;
+background-color: #E6E6E6;
+color: #222222;
+}
+
+.lawyers {
+    background-color: #F7F7F7;
+    padding: 80px 0px 80px 0px;
 }
