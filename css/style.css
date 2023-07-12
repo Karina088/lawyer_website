@@ -228,8 +228,7 @@ main {
 
 .services__item:hover {
     background-color: #4F8FF0;
-    /* background-image: url(../img/services/hover_border.svg); */
-    cursor: pointer;
+    cursor: url(../img/lawyers/cursor.svg), auto;
 }
 
 .services__item:hover>.services__content>.services__subtitle { 
@@ -285,34 +284,12 @@ main {
     line-height: 120%;
 }
 
-@media (max-width: 1024px) {
-    .services__span { 
-font-weight: 300;
--ms-text-overflow: ellipsis;
--o-text-overflow: ellipsis;
-text-overflow: ellipsis;
-overflow: hidden;
--ms-line-clamp: 2;
--webkit-line-clamp: 2;
-line-clamp: 2;
-display: -webkit-box;
-display: box;
-word-wrap: break-word;
--webkit-box-orient: vertical;
-box-orient: vertical;
-}
-}
-
-
-
 .about__company {
     background-color: #FFFFFF;
     display: flex;
     padding: 80px 0 80px 0;
     justify-content: space-evenly;
 }
-
-.about__company__content {}
 
 .about__company-titlle {
 color: #222222;
@@ -378,6 +355,90 @@ color: #222222;
     background-color: #F7F7F7;
     padding: 80px 0px 80px 0px;
 }
-.lawyers__content {
+.lawyers__description {
     text-align: center;
+}
+
+.lawyers__card {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.lawyers__item {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    
+}
+
+.lawyers__content {
+  transition: all 0.5s ease;
+  width: 312px;
+}
+
+.lawyers__item:hover {
+    border: 1px solid #4F8FF0;
+    cursor: url(../img/lawyers/cursor.svg), auto;
+}
+
+.lawyers__item:hover>.lawyers__content>.lawyers__img {
+    background-color: #FFFFFF;
+    display: none; 
+}
+
+.lawyers__item:hover>.lawyers__content>.lawyers__name {
+    padding: 83px 0;
+}
+
+.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__subtitle, 
+.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__post {
+  text-align: center;
+}
+
+.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__span-hidden:before {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 0px;
+width: 265px;
+    color: #000000;
+text-align: center;
+font-size: 14px;
+font-weight: 300;
+line-height: 120%;
+    content: 'Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.'
+}
+
+.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__par-hidden:before {
+    display: flex;
+    justify-content: center;
+    content: '12 лет юридической практики';
+    color: #222222;
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+line-height: 120%;
+}
+
+.lawyers__name {
+    display: grid;
+    padding: 24px 0px;
+    gap: 10px;
+}
+
+.lawyers__subtitle {
+    color: #222222;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.lawyers__post {
+    color: #222222;
+text-align: center;
+font-size: 14px;
+font-weight: 300;
+line-height: 120%;
+text-transform: lowercase;
 }
