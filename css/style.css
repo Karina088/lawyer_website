@@ -299,11 +299,11 @@ main {
 .about__company {
     background-color: #FFFFFF;
     display: flex;
-    padding: 80px 0 80px 0;
+    padding: 80px 60px 80px 60px;
     justify-content: space-evenly;
 }
 
-.about__company-titlle {
+.about__company-titlle, .rewiews__title {
     color: #222222;
     font-size: 28px;
     font-weight: 800;
@@ -316,7 +316,7 @@ main {
     color: #4F8FF0;
 }
 
-.about__company-hr {
+.about__company-hr, .rewiews-hr {
     width: 50px;
     height: 3px;
     background-color: #4F8FF0;
@@ -467,4 +467,63 @@ main {
 
 .swiper {
     max-width: 1344px;
+}
+
+.reviews {
+    background-color: #D9D9D9;
+    background-image: url(../img/reviews/bg.svg);
+    padding: 80px 0 80px 0;
+}
+
+.reviews__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+.reviews__card {
+    display: flex;
+    gap: 24px;
+}
+
+.reviews__item {
+    padding: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+}
+
+.reviews__user {
+    display: flex;
+    gap: 24px;
+}
+
+.reviews__name {
+   
+}
+
+.reviews__par {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.reviews__subject {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.reviews__comment {
+    
+}
+
+.reviews__text {
+    width: 584px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
 }

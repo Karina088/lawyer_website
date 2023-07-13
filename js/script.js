@@ -7,6 +7,8 @@ const linkCompany = document.querySelector('.company-link')
 const aboutCompanyEl = document.querySelector('.about__company')
 const linkLawyer = document.querySelector('.lawyers-link')
 const lawyersEl = document.querySelector('.lawyers')
+const linkReviews = document.querySelector('.reviews-link')
+const reviewsEl = document.querySelector('.reviews')
 
 // навигация по сайту
 function scrollTo(element) {
@@ -31,4 +33,8 @@ linkCompany.addEventListener('click', () => {
 
  linkLawyer.addEventListener('click', () => { 
     scrollTo(lawyersEl)
+ })
+
+ linkReviews.addEventListener('click', () => {
+    scrollTo(reviewsEl)
  })
