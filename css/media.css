@@ -14,4 +14,8 @@ word-wrap: break-word;
 -webkit-box-orient: vertical;
 box-orient: vertical;
 }
+.swiper {
+    max-width: 944px;
+    margin: 0 69px 0 69px;
+}
 }

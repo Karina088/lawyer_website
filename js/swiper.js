@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    // direction: 'horizontal',
-    // loop: true,
+    direction: 'horizontal',
+    loop: true,
     autoplay:  {
         delay: 5000,
     },
@@ -15,20 +15,13 @@ const swiper = new Swiper('.swiper', {
         1024: {
           slidesPerView: 3,
         },
+        1220: {
+          slidesPerView: 4,
+        }
       },
 
       mousewheel: {
         forceToAxis: true,
       },  
-
-   
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 

@@ -61,7 +61,8 @@ main {
 .top__menu-icon:hover>img {
     transform: scale(1) translate(10%, 10%);
     transition: all .5s;
-} 
+}
+
 .top__menu-link:hover {
     text-decoration: underline;
     color: #4F8FF0;
@@ -241,10 +242,11 @@ main {
     cursor: url(../img/lawyers/cursor.svg), auto;
 }
 
-.services__item:hover>.services__content>.services__subtitle { 
+.services__item:hover>.services__content>.services__subtitle {
     color: #FFFFFF;
 }
-.services__item:hover>.services__content>.services__span { 
+
+.services__item:hover>.services__content>.services__span {
     color: #FFFFFF;
 }
 
@@ -302,16 +304,18 @@ main {
 }
 
 .about__company-titlle {
-color: #222222;
-font-size: 28px;
-font-weight: 800;
-line-height: 150%;
-text-transform: uppercase;
-padding-bottom: 10px;
+    color: #222222;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 }
+
 .about__company-span {
     color: #4F8FF0;
 }
+
 .about__company-hr {
     width: 50px;
     height: 3px;
@@ -319,52 +323,56 @@ padding-bottom: 10px;
     display: flex;
     justify-content: start;
 }
+
 .about__company-par {
     width: 720px;
     padding-top: 24px;
-color: #222222;
-font-size: 16px;
-font-weight: 400;
-line-height: 150%;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
 }
+
 .about__company__links {
     display: flex;
-align-items: flex-start;
-gap: 24px;
-margin-top: 32px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .about__company__links>a {
     padding: 16px 24px;
     text-align: center;
-font-size: 14px;
-font-weight: 900;
-line-height: 120%;
-text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
 }
+
 .about__company__links>a:hover {
     background-color: #FFFFFF;
 }
 
 .about__company-link {
     border: 2px solid #4F8FF0;
-background-color: #4F8FF0;
+    background-color: #4F8FF0;
 }
 
 .about__company-link:hover {
     color: #4F8FF0;
-} 
+}
 
 .about__company-reference {
     border: 2px solid #E6E6E6;
-background-color: #E6E6E6;
-color: #222222;
+    background-color: #E6E6E6;
+    color: #222222;
 }
 
 .lawyers {
     background-color: #F7F7F7;
     padding: 80px 0px 80px 0px;
 }
+
 .lawyers__description {
     text-align: center;
 }
@@ -383,7 +391,7 @@ color: #222222;
 }
 
 .lawyers__content {
-  width: 312px;
+    width: 312px;
 }
 
 .lawyers__item:hover {
@@ -393,7 +401,7 @@ color: #222222;
 
 .lawyers__item:hover>.lawyers__content>.lawyers__img {
     background-color: #FFFFFF;
-    display: none; 
+    display: none;
 }
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name {
@@ -401,21 +409,21 @@ color: #222222;
     transition: all .7s ease-in-out;
 }
 
-.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__subtitle, 
+.lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__subtitle,
 .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__post {
-  text-align: center;
+    text-align: center;
 }
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__span-hidden:before {
     display: flex;
     margin: 0 auto;
     padding: 40px 0px;
-width: 265px;
+    width: 265px;
     color: #000000;
-text-align: center;
-font-size: 14px;
-font-weight: 300;
-line-height: 120%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
     content: 'Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.'
 }
 
@@ -424,10 +432,10 @@ line-height: 120%;
     justify-content: center;
     content: '12 лет юридической практики';
     color: #222222;
-text-align: center;
-font-size: 16px;
-font-weight: 600;
-line-height: 120%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
 }
 
 .lawyers__name {
@@ -446,17 +454,17 @@ line-height: 120%;
 
 .lawyers__post {
     color: #222222;
-text-align: center;
-font-size: 14px;
-font-weight: 300;
-line-height: 120%;
-text-transform: lowercase;
-}
-
-.swiper-wrapper {
-   
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: lowercase;
 }
 
 .lawyers-swaper {
     width: 312px;
+}
+
+.swiper {
+    max-width: 1344px;
 }
