@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     overflow-x: hidden;
@@ -23,6 +23,7 @@ a:hover {
 }
 
 main {
+    background-color: #F7F7F7;
     padding: 80px 0px 80px 0px;
 }
 
@@ -211,7 +212,7 @@ main {
     height: 3px;
 }
 
-.services__par, .lawyers__par {
+.services__par, .lawyers__par,.news__par {
     margin: 0 auto;
     width: 920px;
     padding: 24px 0px 48px 0px;
@@ -303,7 +304,7 @@ main {
     justify-content: space-evenly;
 }
 
-.about__company-titlle, .rewiews__title {
+.about__company-title, .reviews__title, .news__title {
     color: #222222;
     font-size: 28px;
     font-weight: 800;
@@ -316,15 +317,15 @@ main {
     color: #4F8FF0;
 }
 
-.about__company-hr, .rewiews-hr {
+.about__company-hr, .reviews-hr, .news__hr {
     width: 50px;
     height: 3px;
     background-color: #4F8FF0;
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
 }
 
-.about__company-par {
+.about__company-par{
     width: 720px;
     padding-top: 24px;
     color: #222222;
@@ -333,14 +334,14 @@ main {
     line-height: 150%;
 }
 
-.about__company__links {
+.about__company__links, .reviews__links {
     display: flex;
     align-items: flex-start;
     gap: 24px;
     margin-top: 32px;
 }
 
-.about__company__links>a {
+.about__company__links>a, .reviews__links>a {
     padding: 16px 24px;
     text-align: center;
     font-size: 14px;
@@ -349,20 +350,20 @@ main {
     text-transform: uppercase;
 }
 
-.about__company__links>a:hover {
+.about__company__links>a:hover, .reviews__links>a:hover {
     background-color: #FFFFFF;
 }
 
-.about__company-link {
+.about__company-link, .reviews__link {
     border: 2px solid #4F8FF0;
     background-color: #4F8FF0;
 }
 
-.about__company-link:hover {
+.about__company-link:hover, .reviews__link:hover {
     color: #4F8FF0;
 }
 
-.about__company-reference {
+.about__company-reference, .reviews__reference {
     border: 2px solid #E6E6E6;
     background-color: #E6E6E6;
     color: #222222;
@@ -373,7 +374,7 @@ main {
     padding: 80px 0px 80px 0px;
 }
 
-.lawyers__description {
+.lawyers__description, .news__description{
     text-align: center;
 }
 
@@ -406,7 +407,7 @@ main {
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name {
     padding: 83px 0;
-    transition: all .7s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__subtitle,
@@ -472,7 +473,7 @@ main {
 .reviews {
     background-color: #D9D9D9;
     background-image: url(../img/reviews/bg.svg);
-    padding: 80px 0 80px 0;
+    padding: 80px 0 80px 0px;
 }
 
 .reviews__content {
@@ -485,21 +486,29 @@ main {
 .reviews__card {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .reviews__item {
     padding: 32px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews__user {
     display: flex;
+    justify-content: space-between;
     gap: 24px;
+    align-items: center;
 }
 
-.reviews__name {
-   
+.reviews__user-content {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 .reviews__par {
@@ -516,14 +525,29 @@ main {
     line-height: 150%;
 }
 
-.reviews__comment {
-    
-}
-
 .reviews__text {
     width: 584px;
     color: #222222;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+}
+
+.reviews__links {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 290px;
+}
+
+.news {
+    background-color: #FFFFFF;
+    padding: 80px 0 80px 0;
+}
+
+.news__description {
+  /* text-align: center; */
+}
+
+.news__hr, .news__par {
+    margin: 0 auto;
 }
