@@ -44,3 +44,5 @@ linkCompany.addEventListener('click', () => {
  linkNews.addEventListener('click', () => { 
     scrollTo(newsEl) 
 })
+
+

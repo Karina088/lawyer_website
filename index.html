@@ -21,9 +21,10 @@
 </head>
 
 <body>
+
     <header>
         <div class="menu">
-            <div class="top__menu" >
+            <div class="top__menu">
                 <div class="top__menu__contacts">
                     <div class="top__menu-icon">
                         <img class="top__menu-img" src="img/header/phone.svg" alt="Иконка телефона">
@@ -42,7 +43,7 @@
         </div>
 
         <div class="main__menu">
-            <div class="main__menu__content out">
+            <div class="main__menu__content" id="menu">
                 <div class="main__menu__logo">
                     <p class="main__menu-par">Правозащитник</p>
                     <span class="main__menu-span">Юридическая компания</span>
@@ -58,7 +59,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="main__content" style="padding-top: 300px;">
+            <div class="main__content">
                 <h3 class="main__content-subtitle">Оказываем весь комплекс</h3>
                 <h1 class="main__content-title">Юридических услуг</h1>
                 <p class="main__content-par">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
@@ -71,8 +72,10 @@
         </div>
     </header>
 
+
+
     <main>
-        <div class="services">
+        <div class="services services-sticky">
             <h3 class="services__title">Наши услуги</h3>
             <div class="services__hr"></div>
             <p class="services__par">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
@@ -488,7 +491,10 @@
                             </div>
                             <div class="reviews__comment">
                                 <p class="reviews__text">
-                                    Под выпуском цифровой валюты в Российской Федерации понимаются действия с использованием объектов российской информационной инфраструктуры и (или) пользовательского оборудования, размещенного на территории РФ, направленные на предоставление возможностей использования цифровой валюты третьими лицами.
+                                    Под выпуском цифровой валюты в Российской Федерации понимаются действия с
+                                    использованием объектов российской информационной инфраструктуры и (или)
+                                    пользовательского оборудования, размещенного на территории РФ, направленные на
+                                    предоставление возможностей использования цифровой валюты третьими лицами.
                                 </p>
                             </div>
                         </div>
@@ -576,9 +582,9 @@
 
     </main>
 
-
     <footer></footer>
-
+    
+    <script src="../js/menuEl.js"></script>
     <script src="../js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"
         integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g=="

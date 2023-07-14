@@ -87,25 +87,32 @@ main {
 .main__menu {
     background-image: url(../img/header/menu__bg.svg);
 }
-.menu, .main__menu__content  {
-    position: fixed;
-    width: 100%;
-    z-index: 100000; 
-     transition: all .3s ease;
-}
 
 .main__menu__content {
     background-color: rgba(1, 1, 1, 0.76);
     display: flex;
     justify-content: space-between;
     padding: 20px 69px 28px 69px;
-    /* position: fixed;
+    /* position: sticky;
+    top: 0;
     width: 100%;
     z-index: 100000;
     transition: all .3s ease; */
 }
-.out {
-	transform: translateY(40%);
+
+.menu {
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.services-sticky {
+    padding-top: 200px;
 }
 
 .main__menu-par {
