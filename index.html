@@ -10,14 +10,13 @@
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.css">
-
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#4f8ff0">
     <meta name="msapplication-TileColor" content="#4f8ff0">
-    <meta name="theme-color" content="#4f8ff0">
+    <meta name="theme-color" content="#ffffff">
     <title>Правозащитник | Юридическая компания</title>
 </head>
 
@@ -368,7 +367,7 @@
         </div>
 
         <div class="reviews">
-            <div class="reviews__content">
+            <!-- <div class="reviews__content">
                 <div class="reviews__desc">
                     <h3 class="reviews__title">Что о нас говорят клиенты</h3>
                     <div class="reviews-hr"></div>
@@ -381,9 +380,132 @@
                         <img src="./img/reviews/arrowright.svg" alt="стрелки свайпера">
                     </div>
                 </div>
+            </div> -->
+
+
+            <!-- Slider main container -->
+            <div class="swiper swiper__reviews">
+                <div class="reviews__content">
+                    <div class="reviews__desc">
+                        <h3 class="reviews__title">Что о нас говорят клиенты</h3>
+                        <div class="reviews-hr"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="reviews__arrow">
+                        <div class="swiper-button">
+                            <img src="./img/reviews/arrowleft.svg" alt="стрелки свайпера">
+                        </div>
+                        <div style="margin: 0 8px 0 8px;">
+                            <img src="./img/reviews/blue_line.svg" alt="стрелки свайпера">
+                        </div>
+                        <div class="swiper-button-arrow"><img src="./img/reviews/arrowright.svg" alt="стрелки свайпера">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="reviews__item swiper__item">
+                            <div class="reviews__user">
+
+                                <div class="reviews__user-content">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/reviews/face.svg" alt="Аватарка">
+                                    </div>
+                                    <div class="reviews__name">
+                                        <p class="reviews__par">ООО “ИТ Консалтинг”</p>
+                                        <h6 class="reviews__subject">Логинова Анастасия</h6>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__icon">
+                                    <img src="./img/reviews/icons_feather.svg" alt="Иконка">
+                                </div>
+                            </div>
+                            <div class="reviews__comment">
+                                <p class="reviews__text">
+                                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но
+                                    это не
+                                    совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+                                    есть более
+                                    двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа
+                                    Hampden-Sydney, штат
+                                    Вирджиния, взял одно из самых странных слов ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item swiper__item">
+                            <div class="reviews__user">
+
+                                <div class="reviews__user-content">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/reviews/face_2.svg" alt="Аватарка">
+                                    </div>
+                                    <div class="reviews__name">
+                                        <p class="reviews__par">АО “ПРОМАРШ”</p>
+                                        <h6 class="reviews__subject">Макаров Сергей</h6>
+                                    </div>
+                                </div>
+                                <div class="reviews__icon">
+                                    <img src="./img/reviews/icons_feather.svg" alt="Иконка">
+                                </div>
+
+                            </div>
+                            <div class="reviews__comment">
+                                <p class="reviews__text">
+                                    Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
+                                    какой-нибудь
+                                    шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum
+                                    используют один и тот же текст, который они просто повторяют, пока не достигнут
+                                    нужный
+                                    объём.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__item swiper__item">
+                            <div class="reviews__user">
+
+                                <div class="reviews__user-content">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/reviews/face.svg" alt="Аватарка">
+                                    </div>
+                                    <div class="reviews__name">
+                                        <p class="reviews__par">ООО “ИТ Консалтинг”</p>
+                                        <h6 class="reviews__subject">Логинова Анастасия</h6>
+                                    </div>
+                                </div>
+
+                                <div class="reviews__icon">
+                                    <img src="./img/reviews/icons_feather.svg" alt="Иконка">
+                                </div>
+                            </div>
+                            <div class="reviews__comment">
+                                <p class="reviews__text">
+                                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но
+                                    это не
+                                    совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+                                    есть более
+                                    двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа
+                                    Hampden-Sydney, штат
+                                    Вирджиния, взял одно из самых странных слов ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="reviews__card">
+
+            <div class="reviews__card" style="display: none;">
 
                 <div class="reviews__item">
                     <div class="reviews__user">

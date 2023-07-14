@@ -212,7 +212,7 @@ main {
     height: 3px;
 }
 
-.services__par, .lawyers__par,.news__par {
+.services__par, .lawyers__par, .news__par {
     margin: 0 auto;
     width: 920px;
     padding: 24px 0px 48px 0px;
@@ -325,7 +325,7 @@ main {
     /* justify-content: start; */
 }
 
-.about__company-par{
+.about__company-par {
     width: 720px;
     padding-top: 24px;
     color: #222222;
@@ -374,7 +374,7 @@ main {
     padding: 80px 0px 80px 0px;
 }
 
-.lawyers__description, .news__description{
+.lawyers__description, .news__description {
     text-align: center;
 }
 
@@ -479,7 +479,7 @@ main {
 
 .reviews__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 48px;
 }
@@ -488,6 +488,27 @@ main {
     display: flex;
     gap: 24px;
     justify-content: center;
+}
+
+/* swiper reviews */
+
+.swiper__reviews {
+    max-width: 1324px;
+}
+
+.reviews__arrow {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.swiper__item {
+    /* width: 648px; */
+}
+
+.swiper-button, .swiper-button-arrow {
+    cursor: pointer;
 }
 
 .reviews__item {
