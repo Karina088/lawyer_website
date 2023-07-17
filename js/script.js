@@ -16,44 +16,56 @@ const footerEl = document.querySelector('.footer')
 
 // site navigation
 
-function scrollTo(element) {
+/*
+function scrollToElement(element) {
     window.scroll({
         left: 0,
         top: element.offsetTop,
         behavior: 'smooth',
     })
+    console.log(element.offsetTop + ' show')
 }
 
 
 linkEl.addEventListener('click', () => {
-    scrollTo(serviceEl)
+    scrollToElement(serviceEl)
 })
 
 linkServices.addEventListener('click', () => {
-    scrollTo(serviceEl)
+    scrollToElement(serviceEl)
 })
 
 linkCompany.addEventListener('click', () => {
-    scrollTo(aboutCompanyEl)
+    scrollToElement(aboutCompanyEl)
  })
 
  linkLawyer.addEventListener('click', () => { 
-    scrollTo(lawyersEl)
+    scrollToElement(lawyersEl)
  })
 
  linkReviews.addEventListener('click', () => {
-    scrollTo(reviewsEl)
+    scrollToElement(reviewsEl)
  })
 
  linkNews.addEventListener('click', () => { 
-    scrollTo(newsEl) 
+    scrollToElement(newsEl) 
 })
 
 linkContacts.addEventListener('click', () => {
-    scrollTo(footerEl)
+    scrollToElement(footerEl)
 })
+*/
 
-
-
+// v2
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('anchor ' + anchor)
+        console.log('scroll to ' + this.getAttribute('href').substring(1))
+        document.querySelector(this.getAttribute('href').substring(1)).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
