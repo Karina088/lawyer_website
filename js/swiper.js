@@ -64,7 +64,6 @@ const swiperNews = new Swiper('.swiper__news', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  zoom: 1,
  
   slidesPerView: 2,
   spaceBetween: 24,
@@ -80,7 +79,21 @@ const swiperNews = new Swiper('.swiper__news', {
       }
     },
 
+    preloadImages: false,
+    lazy: {
+      loadOnTransitionStart: false,
+      loadPrevNext: false,
+    },
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+
     mousewheel: {
       forceToAxis: true,
     }, 
+    a11y: {
+      enabled: true,
+    },
+   hashNavigation: {
+    watchState: true,
+   }
 });

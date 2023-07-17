@@ -618,6 +618,7 @@ main {
 .news__img img:hover {
     filter: brightness(50%);
     cursor: url(../img/news/white_cursor.svg), auto;
+    zoom: 1.05;
 }
 
 .news__content {

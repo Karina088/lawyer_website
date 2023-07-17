@@ -9,7 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.css">
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -88,7 +90,7 @@
         <div>
             <div class="services__card">
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".2s" data-wow-delay="0.2s">
                     <div class="services__content">
                         <div class="services__img">
                             <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -103,10 +105,9 @@
                             несостоятельности
                             (банкротстве)».</span>
                     </div>
-
                 </article>
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".3s" data-wow-delay="0.2s">
                     <div class="services__content">
                         <div class="services__img">
                             <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -124,7 +125,7 @@
                     </div>
                 </article>
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".2s" data-wow-delay="0.2s">
                     <div class="services__content">
                         <div class="services__img"><svg width="36" height="35" viewBox="0 0 36 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -140,9 +141,10 @@
                     </div>
                 </article>
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".2s" data-wow-delay="0.2s">
                     <div class="services__content">
-                        <div class="services__img"><svg width="36" height="35" viewBox="0 0 36 35" fill="none"
+                        <div class="services__img">
+                            <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
@@ -155,7 +157,7 @@
                     </div>
                 </article>
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".2s" data-wow-delay="0.2s">
                     <div class="services__content">
                         <div class="services__img"><svg width="36" height="35" viewBox="0 0 36 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +173,7 @@
 
                 </article>
 
-                <article class="services__item">
+                <article class="services__item wow animate__fadeInUp" data-wow-duration=".2s" data-wow-delay="0.2s">
                     <div class="services__content">
                         <div class="services__img">
                             <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -518,85 +520,93 @@
                     заполнение шаблона</p>
             </div>
 
-            <div class="swiper swiper__news">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide" lazy="true">
-                        <div class="news__card">
-                            <div class="news__img">
-                                <img src="./img/news/town.svg" loading="lazy" alt="Город">
-                            </div>
-                            <div class="news__content">
-                                <h5 class="news__subtitle">Воистину радостный звук: шёпот бессменных лидеров</h5>
-                                <div class="news__date">
-                                    <p class="news__date-par">24 июл. 2023 г.</p>
-                                    <div class="news__date-hr"></div>
+            <swiper-container>
+                <div class="swiper swiper__news">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" lazy="true">
+                            <div data-hash="slider-1" class="news__card">
+                                <div class="news__img">
+                                    <img src="./img/news/town.svg" class="swiper-lazy" alt="Город">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
-                                <p class="news__text">Предварительные выводы неутешительны: синтетическое тестирование,
-                                    а также
-                                    свежий взгляд на привычные вещи — безусловно открывает новые горизонты для
-                                    экономической
-                                    целесообразности принимаемых решений. </p>
+                                <div class="news__content">
+                                    <h5 class="news__subtitle">Воистину радостный звук: шёпот бессменных лидеров</h5>
+                                    <div class="news__date">
+                                        <p class="news__date-par">24 июл. 2023 г.</p>
+                                        <div class="news__date-hr"></div>
+                                    </div>
+                                    <p class="news__text">Предварительные выводы неутешительны: синтетическое
+                                        тестирование,
+                                        а также
+                                        свежий взгляд на привычные вещи — безусловно открывает новые горизонты для
+                                        экономической
+                                        целесообразности принимаемых решений. </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide" lazy="true">
-                        <div class="news__card">
-                            <div class="news__img">
-                                <img src="./img/news/paris.svg" loading="lazy" alt="Париж">
-                            </div>
-                            <div class="news__content">
-                                <h5 class="news__subtitle">Франция намерена исследовать, почему объемы выросли
+                        <div class="swiper-slide" lazy="true">
+                            <div class="news__card" data-hash="slider-2">
+                                <div class="news__img">
+                                    <img src="./img/news/paris.svg" loading="lazy" alt="Париж">
+                                </div>
+                                <div class="news__content">
+                                    <h5 class="news__subtitle">Франция намерена исследовать, почему объемы выросли
 
-                                </h5>
-                                <div class="news__date">
-                                    <p class="news__date-par">12 июн. 2023 г.</p>
-                                    <div class="news__date-hr"></div>
+                                    </h5>
+                                    <div class="news__date">
+                                        <p class="news__date-par">12 июн. 2023 г.</p>
+                                        <div class="news__date-hr"></div>
+                                    </div>
+                                    <p class="news__text">Для современного мира новая модель организационной
+                                        деятельности
+                                        влечет за
+                                        собой процесс внедрения и модернизации вывода текущих активов. Являясь всего
+                                        лишь
+                                        частью
+                                        общей картины, базовые сценарии поведения...</p>
                                 </div>
-                                <p class="news__text">Для современного мира новая модель организационной деятельности
-                                    влечет за
-                                    собой процесс внедрения и модернизации вывода текущих активов. Являясь всего лишь
-                                    частью
-                                    общей картины, базовые сценарии поведения...</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide" lazy="true">
-                        <div class="news__card">
-                            <div class="news__img">
-                                <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
-                            </div>
-                            <div class="news__content">
-                                <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять</h5>
-                                <div class="news__date">
-                                    <p class="news__date-par">02 май 2023 г.</p>
-                                    <div class="news__date-hr"></div>
+                        <div class="swiper-slide" lazy="true">
+                            <div class="news__card" data-hash="slider-3">
+                                <div class="news__img">
+                                    <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
                                 </div>
-                                <p class="news__text">Современные технологии достигли такого уровня, что курс на
-                                    социально-ориентированный национальный проект способствует повышению качества
-                                    соответствующих условий активизации.</p>
+                                <div class="news__content">
+                                    <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять
+                                    </h5>
+                                    <div class="news__date">
+                                        <p class="news__date-par">02 май 2023 г.</p>
+                                        <div class="news__date-hr"></div>
+                                    </div>
+                                    <p class="news__text">Современные технологии достигли такого уровня, что курс на
+                                        социально-ориентированный национальный проект способствует повышению качества
+                                        соответствующих условий активизации.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide" lazy="true">
-                        <div class="news__card">
-                            <div class="news__img">
-                                <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
-                            </div>
-                            <div class="news__content">
-                                <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять</h5>
-                                <div class="news__date">
-                                    <p class="news__date-par">02 май 2023 г.</p>
-                                    <div class="news__date-hr"></div>
+                        <div class="swiper-slide" lazy="true">
+                            <div class="news__card" data-hash="slider-4">
+                                <div class="news__img">
+                                    <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
                                 </div>
-                                <p class="news__text">Современные технологии достигли такого уровня, что курс на
-                                    социально-ориентированный национальный проект способствует повышению качества
-                                    соответствующих условий активизации.</p>
+                                <div class="news__content">
+                                    <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять
+                                    </h5>
+                                    <div class="news__date">
+                                        <p class="news__date-par">02 май 2023 г.</p>
+                                        <div class="news__date-hr"></div>
+                                    </div>
+                                    <p class="news__text">Современные технологии достигли такого уровня, что курс на
+                                        социально-ориентированный национальный проект способствует повышению качества
+                                        соответствующих условий активизации.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </swiper-container>
 
             <!-- <div class="news__items">
                 <div class="news__card">
@@ -753,6 +763,8 @@
 
     <script src="../js/menuEl.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/wow.animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"
         integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
