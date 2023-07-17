@@ -14,7 +14,8 @@ const newsEl = document.querySelector('.news')
 const linkContacts = document.querySelector('.contacts-link')
 const footerEl = document.querySelector('.footer')
 
-// навигация по сайту
+// site navigation
+
 function scrollTo(element) {
     window.scroll({
         left: 0,
@@ -22,6 +23,7 @@ function scrollTo(element) {
         behavior: 'smooth',
     })
 }
+
 
 linkEl.addEventListener('click', () => {
     scrollTo(serviceEl)
@@ -50,5 +52,8 @@ linkCompany.addEventListener('click', () => {
 linkContacts.addEventListener('click', () => {
     scrollTo(footerEl)
 })
+
+
+
 
 

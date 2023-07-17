@@ -35,6 +35,8 @@ main {
 .top__menu {
     display: flex;
     justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .top__menu__contacts {
@@ -90,14 +92,19 @@ main {
 
 .main__menu__content {
     background-color: rgba(1, 1, 1, 0.76);
-    display: flex;
-    justify-content: space-between;
     padding: 20px 69px 28px 69px;
     /* position: sticky;
     top: 0;
     width: 100%;
     z-index: 100000;
     transition: all .3s ease; */
+}
+
+.main__menu-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .menu {
@@ -234,7 +241,7 @@ main {
 
 .services__par, .lawyers__par, .news__par {
     margin: 0 auto;
-    width: 920px;
+    max-width: 920px;
     padding: 24px 0px 48px 0px;
     color: #222222;
     font-size: 16px;
@@ -569,7 +576,6 @@ main {
 }
 
 .reviews__text {
-    width: 584px;
     color: #222222;
     font-size: 14px;
     font-weight: 400;
@@ -600,7 +606,10 @@ footer {}
 
 .footer__top {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
     padding-bottom: 60px;
 }
 
@@ -637,19 +646,172 @@ footer {}
 .footer__hr {
     opacity: 0.2;
     background-color: #8C8C8C;
-    width: 1520px;
+    width: 1320px;
     height: 1px;
     margin: 0 auto;
-    
+}
+
+.footer__main {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__item {
+    text-align: flex-start;
+    gap: 24px;
+}
+
+.footer__content {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer__icon {
+    background-color: #2C2C2C;
+    padding: 12px;
+    width: 55px;
+}
+
+.footer__icon img {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__connection {}
+
+.footer__connection-par {
+    color: #8C8C8C;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.4px;
+    text-transform: uppercase;
+}
+
+.footer__connection-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.footer__connection-link:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.footer__navigation {
+    display: flex;
+}
+
+.footer__nav {}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__list>li {
+    list-style-type: none;
+}
+
+.footer__list>li>a {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.footer__list>li>a:hover {
+    color: #4F8FF0;
+}
+
+.footer__support {}
+
+.footer__support-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__figure {
+    display: flex;
+    gap: 24px;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+figcaption>span {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.8px;
+}
+
+.footer__support-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__support-par {
+    max-width: 424px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.footer__btn {
+    width: 261px;
+    border: 2px solid #4F8FF0;
+    background-color: #4F8FF0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 16.8px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.footer__btn:hover {
+    color: #4F8FF0;
+    background-color: #FFFFFF;
 }
 
 .copyright {
     background-color: #181818;
     padding: 16px 0px;
-    display: flex;
-    justify-content: space-around;
 }
 
+.copyright section {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
 .copyright__par, .copyright__link {
     color: #FFFFFF;
