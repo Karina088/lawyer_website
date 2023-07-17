@@ -58,3 +58,29 @@ const swiperReiews = new Swiper('.swiper__reviews', {
       prevEl: '.swiper-button',
     },
 });
+
+
+const swiperNews = new Swiper('.swiper__news', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  zoom: 1,
+ 
+  slidesPerView: 2,
+  spaceBetween: 24,
+  breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1220: {
+        slidesPerView: 3,
+      }
+    },
+
+    mousewheel: {
+      forceToAxis: true,
+    }, 
+});

@@ -24,7 +24,7 @@ a:hover {
 
 main {
     background-color: #F7F7F7;
-    padding: 80px 0px 80px 0px;
+    padding-top: 80px;
 }
 
 .menu {
@@ -595,7 +595,7 @@ main {
 
 .news {
     background-color: #FFFFFF;
-    padding: 80px 0 80px 0;
+    padding: 80px 0px;
 }
 
 .news__hr, .news__par {
@@ -615,6 +615,11 @@ main {
     flex-direction: column;
 }
 
+.news__img img:hover {
+    filter: brightness(50%);
+    cursor: url(../img/news/white_cursor.svg), auto;
+}
+
 .news__content {
     display: flex;
     flex-direction: column;
@@ -629,7 +634,9 @@ main {
 }
 
 .news__date {
-    
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .news__date-par {
@@ -651,8 +658,6 @@ main {
     font-weight: 400;
     line-height: 16.8px;
 }
-
-
 
 
 .footer {
