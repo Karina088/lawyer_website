@@ -26,7 +26,7 @@
 <body>
 
     <header>
-        <div class="menu">
+        <div class="menu wow animate__fadeIn" data-wow-delay="0.1s">
             <div class="top__menu">
                 <div class="top__menu__contacts">
                     <div class="top__menu-icon">
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="main__menu">
+        <div class="main__menu wow animate__fadeIn" data-wow-delay="0.1s">
             <div class="main__menu__content" id="menu">
                 <div class="main__menu-container">
                     <div class="main__menu__logo">
@@ -66,9 +66,11 @@
 
             </div>
             <div class="main__content">
-                <h3 class="main__content-subtitle wow animate__fadeIn" data-wow-delay="0.2s">Оказываем весь комплекс</h3>
+                <h3 class="main__content-subtitle wow animate__fadeIn" data-wow-delay="0.2s">Оказываем весь комплекс
+                </h3>
                 <h1 class="main__content-title wow animate__fadeIn" data-wow-delay="0.3s">Юридических услуг</h1>
-                <p class="main__content-par wow animate__fadeIn" data-wow-delay="0.4s">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                <p class="main__content-par wow animate__fadeIn" data-wow-delay="0.4s">Давно выяснено, что при оценке
+                    дизайна и композиции читаемый текст мешает
                     сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
                     заполнение.</p>
                 <div class="main__content-btn wow animate__fadeIn" data-wow-delay="0.5s">
@@ -200,32 +202,35 @@
         <section class="about__company">
             <div class="about__container">
                 <div class="about__company__content">
-                    <h4 class="about__company-title">Юридическая компания <span
-                            class="about__company-span">правозащитник</span>
+                    <h4 class="about__company-title wow animate__fadeIn" data-wow-delay="0.1s">Юридическая компания
+                        <span class="about__company-span">правозащитник</span>
                     </h4>
-                    <div class="about__company-hr"></div>
-                    <p class="about__company-par">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                    <div class="about__company-h wow animate__fadeIn" data-wow-delay="0.2s"></div>
+                    <p class="about__company-par wow animate__fadeIn" data-wow-delay="0.2s">Давно выяснено, что при
+                        оценке дизайна и композиции читаемый текст
                         мешает
                         сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
                         заполнение.</p>
-                    <p class="about__company-par">Есть много вариантов Lorem Ipsum, но большинство из них имеет не
+                    <p class="about__company-par wow animate__fadeIn" data-wow-delay="0.3s">Есть много вариантов Lorem
+                        Ipsum, но большинство из них имеет не
                         всегда
                         приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                         напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
                         какой-нибудь шутки, скрытой в середине абзаца.</p>
-                    <p class="about__company-par">Есть много вариантов Lorem Ipsum, но большинство из них имеет не
+                    <p class="about__company-par wow animate__fadeIn" data-wow-delay="0.35s">Есть много вариантов Lorem
+                        Ipsum, но большинство из них имеет не
                         всегда
                         приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                         напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
                         какой-нибудь шутки, скрытой в середине абзаца.</p>
-                    <div class="about__company__links">
+                    <div class="about__company__links wow animate__fadeIn" data-wow-delay="0.36s">
                         <a class="about__company-link" href="#" target="_blank" rel="noopener noreferrer">История
                             компании</a>
                         <a class="about__company-reference" href="#" target="_blank"
                             rel="noopener noreferrer">Сертификаты</a>
                     </div>
                 </div>
-                <div class="about__company__img">
+                <div class="about__company__img wow animate__fadeIn" data-wow-delay="0.2s">
                     <img src="../img/company/about_company.svg" alt="Стопка книг">
                 </div>
             </div>
@@ -524,11 +529,10 @@
                 <div class="swiper swiper__news">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" lazy="true">
+                        <div class="swiper-slide">
                             <div data-hash="slider-1" class="news__card">
                                 <div class="news__img">
-                                    <img src="./img/news/town.svg" class="swiper-lazy" alt="Город">
-                                    <div class="swiper-lazy-preloader"></div>
+                                    <img src="./img/news/town.svg" alt="Город">
                                 </div>
                                 <div class="news__content">
                                     <h5 class="news__subtitle">Воистину радостный звук: шёпот бессменных лидеров</h5>
@@ -545,10 +549,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide" lazy="true">
+                        <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-2">
                                 <div class="news__img">
-                                    <img src="./img/news/paris.svg" loading="lazy" alt="Париж">
+                                    <img src="./img/news/paris.svg" alt="Париж">
                                 </div>
                                 <div class="news__content">
                                     <h5 class="news__subtitle">Франция намерена исследовать, почему объемы выросли
@@ -568,10 +572,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide" lazy="true">
+                        <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-3">
                                 <div class="news__img">
-                                    <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
+                                    <img src="./img/news/hands.svg" alt="Руки">
                                 </div>
                                 <div class="news__content">
                                     <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять
@@ -586,10 +590,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide" lazy="true">
+                        <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-4">
                                 <div class="news__img">
-                                    <img src="./img/news/hands.svg" loading="lazy" alt="Руки">
+                                    <img src="./img/news/hands.svg" alt="Руки">
                                 </div>
                                 <div class="news__content">
                                     <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять
@@ -607,57 +611,6 @@
                     </div>
                 </div>
             </swiper-container>
-
-            <!-- <div class="news__items">
-                <div class="news__card">
-                    <div class="news__img">
-                        <img src="./img/news/town.svg" alt="Город">
-                    </div>
-                    <div class="news__content">
-                        <h5 class="news__subtitle">Воистину радостный звук: шёпот бессменных лидеров</h5>
-                        <div class="news__date">
-                            <p class="news__date-par">24 июл. 2023 г.</p>
-                            <div class="news__date-hr"></div>
-                        </div>
-                        <p class="news__text">Предварительные выводы неутешительны: синтетическое тестирование, а также
-                            свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической
-                            целесообразности принимаемых решений. </p>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <div class="news__img">
-                        <img src="./img/news/paris.svg" alt="Париж">
-                    </div>
-                    <div class="news__content">
-                        <h5 class="news__subtitle">Франция намерена исследовать, почему объемы выросли
-
-                        </h5>
-                        <div class="news__date">
-                            <p class="news__date-par">12 июн. 2023 г.</p>
-                            <div class="news__date-hr"></div>
-                        </div>
-                        <p class="news__text">Для современного мира новая модель организационной деятельности влечет за
-                            собой процесс внедрения и модернизации вывода текущих активов. Являясь всего лишь частью
-                            общей картины, базовые сценарии поведения...</p>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <div class="news__img">
-                        <img src="./img/news/hands.svg" alt="Руки">
-                    </div>
-                    <div class="news__content">
-                        <h5 class="news__subtitle">Сплочённость команды профессионалов продолжает удивлять</h5>
-                        <div class="news__date">
-                            <p class="news__date-par">02 май 2023 г.</p>
-                            <div class="news__date-hr"></div>
-                        </div>
-                        <p class="news__text">Современные технологии достигли такого уровня, что курс на
-                            социально-ориентированный национальный проект способствует повышению качества
-                            соответствующих условий активизации.</p>
-                    </div>
-                </div>
-            </div> -->
-
         </div>
 
     </main>
