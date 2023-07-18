@@ -13,13 +13,19 @@ const swiper = new Swiper('.swiper', {
         320: {
           slidesPerView: 1,
         },
-        390: {
-          slidesPerView: 2,
+        720: {
+          slidesPerView: 1.6,
+        },
+        850: {
+          slidesPerView: 2.2,
+        },
+        870: {
+          slidesPerView: 2.5,
         },
         1024: {
           slidesPerView: 3,
         },
-        1220: {
+        1360: {
           slidesPerView: 4,
         }
       },
@@ -38,10 +44,10 @@ const swiperReiews = new Swiper('.swiper__reviews', {
   slidesPerView: 2,
   spaceBetween: 24,
   breakpoints: {
-      640: {
+      320: {
         slidesPerView: 1,
       },
-      1024: {
+      824: {
         slidesPerView: 1.2,
       },
       1220: {
@@ -68,13 +74,19 @@ const swiperNews = new Swiper('.swiper__news', {
   slidesPerView: 2,
   spaceBetween: 24,
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
       640: {
-        slidesPerView: 1,
+        slidesPerView: 1.4,
       },
-      1024: {
-        slidesPerView: 2,
+      990: {
+        slidesPerView: 2.2,
       },
-      1220: {
+      1160: {
+        slidesPerView: 2.5,
+      },
+      1312: {
         slidesPerView: 3,
       }
     },

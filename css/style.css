@@ -200,7 +200,7 @@ main {
     padding: 48px 0 80px 0;
 }
 
-.main__content-link {
+.main__content-link, .news-btn-link {
     border: 2px solid #4F8FF0;
     background: #4F8FF0;
     padding: 16px 24px;
@@ -212,7 +212,7 @@ main {
     transition: all .7s ease-in-out;
 }
 
-.main__content-link:hover {
+.main__content-link:hover, .news-btn-link:hover {
     border: 2px solid #4F8FF0;
     background: #FFFFFF;
     color: #4F8FF0;
@@ -326,7 +326,7 @@ main {
 
 .about__company {
     background-color: #FFFFFF;
-    padding: 80px 0px;
+    padding: 80px 69px;
 }
 
 .about__container {
@@ -354,7 +354,6 @@ main {
     height: 3px;
     background-color: #4F8FF0;
     display: flex;
-    /* justify-content: start; */
 }
 
 .about__company-par {
@@ -506,7 +505,7 @@ main {
 .reviews {
     background-color: #D9D9D9;
     background-image: url(../img/reviews/bg.svg);
-    padding: 80px 0 80px 0px;
+    padding: 80px 69px;
 }
 
 .reviews__content {
@@ -590,7 +589,7 @@ main {
 .reviews__links {
     display: flex;
     justify-content: flex-start;
-    padding-left: 290px;
+    padding-left: 229px;
 }
 
 .news {
@@ -660,9 +659,14 @@ main {
     line-height: 16.8px;
 }
 
+.news-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+}
 
 .footer {
-    padding: 80px 0px;
+    padding: 80px 69px;
     background-color: #222222;
 }
 
@@ -861,7 +865,7 @@ figcaption>span {
 
 .copyright {
     background-color: #181818;
-    padding: 16px 0px;
+    padding: 16px 69px;
 }
 
 .copyright__container {
