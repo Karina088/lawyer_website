@@ -511,6 +511,8 @@ main {
 .reviews {
     background-color: #D9D9D9;
     background-image: url(../img/reviews/bg.svg);
+    background-position: center;
+    background-size: cover;
     padding: 80px 69px;
 }
 

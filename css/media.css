@@ -247,4 +247,12 @@
     .top__menu-adaptive {
         display: none;
     }
+
+    .main__menu__content {
+        padding: 16px 24px 19px 24px;
+    }
+
+    .main__content {
+        padding: 60px 24px;
+    }
 }
