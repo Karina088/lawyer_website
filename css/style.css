@@ -49,6 +49,11 @@ main {
     align-items: center;
 }
 
+.top__menu-adaptive {
+    display: flex;
+    align-items: center;
+}
+
 .top__menu-img {
     padding-right: 8px;
     align-items: center;
