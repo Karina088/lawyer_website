@@ -88,6 +88,7 @@ main {
 
 .main__menu {
     background-image: url(../img/header/menu__bg.svg);
+    background-size: cover;
 }
 
 .main__menu__content {
@@ -165,7 +166,7 @@ main {
 
 .main__content {
     text-align: center;
-    padding: 150px 0 150px 0;
+    padding: 150px 69px;
 }
 
 .main__content-subtitle {
@@ -844,6 +845,7 @@ figcaption>span {
 }
 
 .footer__btn {
+    font-family: 'Nunito Sans', sans-serif;
     width: 261px;
     border: 2px solid #4F8FF0;
     background-color: #4F8FF0;

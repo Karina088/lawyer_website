@@ -47,8 +47,12 @@ const swiperReiews = new Swiper('.swiper__reviews', {
       320: {
         slidesPerView: 1,
       },
-      824: {
+      624: {
         slidesPerView: 1.2,
+      },
+
+      900: {
+        slidesPerView: 1.5,
       },
       1220: {
         slidesPerView: 2,
