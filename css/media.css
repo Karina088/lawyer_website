@@ -231,15 +231,24 @@
         max-width: 944px;
         margin: 0 69px 0 69px;
     }
+
+    .news__card {
+        max-width: 336px;
+    }
+
+    .news__img img {
+        max-width: 336px;
+    }
 }
 
 @media (max-width: 970px) {
     .footer__navigation {
         display: none;
     }
+
 }
 
-@media (max-width: 726px) {
+@media (max-width: 749px) {
     .menu {
         padding: 16px 24px;
     }
@@ -254,5 +263,206 @@
 
     .main__content {
         padding: 60px 24px;
+    }
+
+    .main__content-subtitle {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .main__content-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .main__content-par {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main__content-btn {
+        padding: 32px 0 60px 0;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    .services {
+        margin: 0px 24px;
+    }
+
+    .services__par, .lawyers__par, .news__par {
+        width: 100%;
+        padding: 16px 0px 24px 0px;
+        font-size: 14px;
+    }
+
+    .services__card {
+        margin: 0px 24px;
+    }
+
+    .services__item {
+        padding: 24px 16px 32px 16px;
+    }
+
+    .services__subtitle {
+        width: 218px;
+    }
+
+    .services__span {
+        width: 218px;
+    }
+
+    .main__content-btn {
+        padding: 30px 0 40px 0;
+    }
+
+    .about__company {
+        padding: 40px 24px;
+    }
+
+    .about__company-title, .reviews__title, .news__title {
+        font-size: 20px;
+    }
+
+    .about__company__links, .reviews__links {
+        margin-top: 40px;
+    }
+
+    .lawyers {
+        padding: 40px 0px 40px 24px;
+    }
+
+    .lawyers__description {
+        margin-right: 24px;
+    }
+
+    .services__title, .lawyers__title {
+        font-size: 20px;
+    }
+
+    .reviews {
+        padding: 40px 24px 40px 24px;
+    }
+
+    .reviews__content {
+        padding-right: 0px;
+        padding-bottom: 24px;
+    }
+
+    .reviews__item {
+        padding: 24px;
+    }
+
+    .about__company__links, .reviews__links {
+        margin-top: 24px;
+    }
+
+    .news {
+        padding: 40px 0px 40px 24px;
+    }
+
+    .news__description {
+        margin: 0 24px 0 0;
+    }
+
+    .news__subtitle {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .news__date-hr {
+        width: 268px;
+    }
+
+    .news-btn {
+        margin: 0 24px 0 0;
+        padding-top: 80px;
+    }
+
+    .lawyers-swiper {
+        margin: 0px 24px;
+    }
+
+    .footer {
+        padding: 40px 24px;
+    }
+
+    .copyright {
+        padding: 16px 24px;
+    }
+
+    .copyright__container {
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 462px) {
+    .about__company__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews__icon {
+        display: none;
+    }
+
+    .reviews__avatar img {
+        width: 50px;
+    }
+
+    .reviews__links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviews__arrow {
+        display: none;
+    }
+
+    .lawyers__content {
+        height: 235px;
+    }
+
+
+
+}
+
+@media (max-width: 402px) {
+    .news__card {
+        max-width: 250px;
+    }
+
+    .news__img img {
+        max-width: 250px;
+    }
+
+    .lawyers-swiper {
+        width: 250px;
+    }
+
+    .lawyers__img img {
+        width: 250px;
+    }
+
+    .lawyers__name {
+        width: 218px;
+        padding-left: 16px;
+    }
+
+    .lawyers__item:hover>.lawyers__content>.lawyers__name {
+        padding: 40px 0;
+    }
+
+    .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__span-hidden:before {
+        padding: 20px 16px;
+        width: 100%;
     }
 }
