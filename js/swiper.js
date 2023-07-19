@@ -82,9 +82,12 @@ const swiperNews = new Swiper('.swiper__news', {
   spaceBetween: 24,
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     },
-    640: {
+    380: {
+      slidesPerView: 1.1,
+    },
+    540: {
       slidesPerView: 1.2,
     },
       740: {

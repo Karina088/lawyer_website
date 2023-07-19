@@ -22,6 +22,11 @@ a:hover {
     transition: all 0.4s ease;
 }
 
+button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+}
+
 main {
     background-color: #F7F7F7;
     padding-top: 80px;
@@ -819,6 +824,7 @@ main {
 
 .footer__figure {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 

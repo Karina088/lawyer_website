@@ -355,6 +355,10 @@
         padding: 24px;
     }
 
+    .reviews__subject {
+        font-size: 18px;
+    }
+
     .about__company__links, .reviews__links {
         margin-top: 24px;
     }
@@ -389,6 +393,28 @@
         padding: 40px 24px;
     }
 
+    .footer__main {
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .footer__logo-heading {
+        line-height: 42px;
+        margin-bottom: -10px;
+    }
+
+    .footer__connection a {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .footer__icon {
+        padding: 11px 10px 10px 11px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+    }
+
     .copyright {
         padding: 16px 24px;
     }
@@ -397,6 +423,26 @@
         display: flex;
         width: 100%;
         gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 679px) {
+    .footer__connection-link {
+        width: 100%;
+    }
+
+    .footer__top {
+        justify-content: center;
+    }
+
+    .footer__support {
+        padding-top: 40px;
+    }
+
+    .footer__main {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -436,6 +482,19 @@
 }
 
 @media (max-width: 402px) {
+
+    .top__menu-img {
+        padding-right: 3px;
+    }
+
+    .top__menu-link {
+        font-size: 13px;
+    }
+
+    .top__menu_button {
+        font-size: 13px;
+    }
+
     .news__card {
         max-width: 250px;
     }
