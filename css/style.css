@@ -672,6 +672,10 @@ main {
     gap: 24px;
 }
 
+.news__cards {
+    /* display: flex; */
+    
+}
 .news__card {
     background-color: #FFFFFF;
     max-width: 424px;
