@@ -683,7 +683,12 @@ main {
 .news__img img:hover {
     filter: brightness(50%);
     cursor: url(../img/news/white_cursor.svg), auto;
-    zoom: 1.05;
+    /* zoom: 1.02; */
+}
+
+news__img-mountains {
+    max-width: 424px;
+     max-height: 270px;
 }
 
 .news__content {

@@ -36,7 +36,7 @@ const swiper = new Swiper('.swiper', {
       mousewheel: {
         forceToAxis: true,
       },  
-});
+})
 
 
 const swiperReiews = new Swiper('.swiper__reviews', {
@@ -70,7 +70,7 @@ const swiperReiews = new Swiper('.swiper__reviews', {
       nextEl: '.swiper-button-arrow',
       prevEl: '.swiper-button',
     },
-});
+})
 
 
 const swiperNews = new Swiper('.swiper__news', {
@@ -121,4 +121,4 @@ const swiperNews = new Swiper('.swiper__news', {
    hashNavigation: {
     watchState: true,
    }
-});
+})
