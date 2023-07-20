@@ -158,7 +158,7 @@
         padding: 60px 0px 60px 69px;
     }
 
-    .main__menu__nav,
+    /* .main__menu__nav, */
     .footer__desc {
         display: none;
     }
@@ -207,6 +207,48 @@
 
     .footer__support-par {
         max-width: 334px;
+    }
+}
+
+@media (max-width: 1142px) {
+    .menu__burger {
+        display: flex;
+    }
+
+    .main__menu__nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999999999;
+        overflow-y: auto;
+        background-color: #222222;
+        padding: 50px 26px;
+        animation: burgerAnimation .4s;
+    }
+
+    .main__menu-list {
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .main__menu-list>li>a {
+        font-size: 16px;
+    }
+
+    @keyframes burgerAnimation {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
     }
 }
 
