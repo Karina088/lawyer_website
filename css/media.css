@@ -298,6 +298,10 @@
     .news__img img {
         max-width: 336px;
     }
+
+    .news__date-hr {
+        width: 70%;
+    }
 }
 
 @media (max-width: 970px) {
@@ -443,7 +447,7 @@
     }
 
     .news__date-hr {
-        width: 268px;
+        width: 240px;
     }
 
     .news-btn {
@@ -624,6 +628,10 @@
     .lawyers__item:hover>.lawyers__content>.lawyers__name>.lawyers__span-hidden:before {
         padding: 20px 16px;
         width: 100%;
+    }
+
+    .news__date-hr {
+        width: 140px;
     }
 }
 

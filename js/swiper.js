@@ -85,10 +85,10 @@ const swiperNews = new Swiper('.swiper__news', {
       slidesPerView: 1,
     },
     380: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
     },
     540: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.1,
     },
       740: {
         slidesPerView: 2,
