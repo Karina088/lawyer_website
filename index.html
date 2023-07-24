@@ -42,6 +42,34 @@
                 <div class="top__menu-btn">
                     <button class="top__menu_button" type="button">Заказать звонок</button>
                 </div>
+
+                <div class="modal">
+                    <h4 class="modal__title">Оставьте заявку</h4>
+                    <form class="modal__form" action="" method="post">
+                        <div class="form__adress">
+                            <div class="form__name">
+                                <label class="form__label" for="name">Имя: </label>
+                                <input type="text" id="name" name="name" placeholder="Карина">
+                            </div>
+                            <div class="form__number">
+                                <label class="form__label" for="phone">Телефон:</label>
+                                <input id="phone" type="tel" name="phone" placeholder="(___)___-__-__"
+                                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            </div>
+                        </div>
+                        <div class="form__agree">
+                            <label for="" class="form__label-agree">
+                                <input type="checkbox" name="agree">Нажимая на кнопку, я принимаю условия <a
+                                    class="form__link" href="#">Пользовательского соглашения</a> и даю согласие на
+                                обработку моих персональных
+                                данных, в соответствии с Федеральным законом от 27.07.2006 года №153-ФЗ "О персональных
+                                данных".
+                            </label>
+
+                        </div>
+                        <button type="submit" value="Отправить">Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -49,7 +77,9 @@
             <div class="main__menu__content" id="menu">
                 <div class="main__menu-container">
                     <div class="main__menu__logo">
-                        <p class="main__menu-par">Правозащитник</p>
+                        <a href="#">
+                            <p class="main__menu-par">Правозащитник</p>
+                        </a>
                         <span class="main__menu-span">Юридическая компания</span>
                     </div>
                     <nav class="main__menu__nav">
@@ -534,8 +564,7 @@
                         <div class="swiper-slide">
                             <div data-hash="slider-1" class="news__card">
                                 <div class="news__img">
-                                    <a href="./main.html"
-                                        target="_blank">
+                                    <a href="./main.html" target="_blank">
                                         <img src="./img/news/town.svg" alt="Город">
                                     </a>
 
@@ -558,8 +587,7 @@
                         <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-2">
                                 <div class="news__img">
-                                    <a href="./main.html"
-                                        target="_blank">
+                                    <a href="./main.html" target="_blank">
                                         <img src="./img/news/paris.svg" alt="Париж"></a>
                                 </div>
                                 <div class="news__content">
@@ -583,8 +611,7 @@
                         <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-3">
                                 <div class="news__img">
-                                    <a href="./main.html"
-                                        target="_blank"><img src="./img/news/hands.svg"
+                                    <a href="./main.html" target="_blank"><img src="./img/news/hands.svg"
                                             alt="Руки"></a>
                                 </div>
                                 <div class="news__content">
@@ -603,8 +630,7 @@
                         <div class="swiper-slide">
                             <div class="news__card" data-hash="slider-4">
                                 <div class="news__img">
-                                    <a href="./main.html"
-                                        target="_blank">
+                                    <a href="./main.html" target="_blank">
                                         <img class="news__img-mountains" src="./img/news/mountains.png" alt="Горы"></a>
                                 </div>
                                 <div class="news__content">
@@ -729,7 +755,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        // masked_input_1.4.1-min.js
+        // angelwatt.com/coding/masked_input.php
 
+        MaskedInput({
+            elm: document.getElementById('phone'), // select by id
+            format: '(___)___-__-__',
+            separator: '()-'
+        });
+    </script>
     <script src="../js/menuEl.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/wow.min.js"></script>

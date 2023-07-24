@@ -96,6 +96,78 @@ main {
     cursor: pointer;
 }
 
+.modal {
+    padding: 32px 42px;
+    background-color: #F7F7F7;
+    border: 2px solid #4F8FF0;
+}
+
+.modal__title {
+    color: #222222;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 42px;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form__adress {
+    display: flex;
+    gap: 40px;
+}
+
+.form__label {
+    color: #222222;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+input[type="text"], input[type="tel"] {
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+}
+
+input::placeholder {
+    padding: 4px;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    border-bottom: 1px solid #8C8C8C;
+}
+.form__agree {
+    width: 520px;
+}
+
+input[type="checkbox"] {
+margin-right: 8px;
+}
+
+.form__label-agree {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.form__link {
+    color: #4F8FF0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+
 .main__menu {
     background-image: url(../img/header/menu__bg.svg);
     background-size: cover;
@@ -674,8 +746,9 @@ main {
 
 .news__cards {
     /* display: flex; */
-    
+
 }
+
 .news__card {
     background-color: #FFFFFF;
     max-width: 424px;
@@ -692,7 +765,7 @@ main {
 
 news__img-mountains {
     max-width: 424px;
-     max-height: 270px;
+    max-height: 270px;
 }
 
 .news__content {

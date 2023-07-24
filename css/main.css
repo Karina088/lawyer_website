@@ -8,14 +8,11 @@
     gap: 40px;
 }
 
-.news__page-card {}
-
 .news__page-content {
     flex-wrap: wrap;
     max-width: 825px;
     gap: 16px;
     display: flex;
-    /* display: grid; */
 }
 
 .news__page-img {
@@ -95,6 +92,7 @@
     .news__page-img {
         width: 335px;
     }
+
     .news__page-hr {
         width: 204px;
     }
@@ -112,6 +110,7 @@
     .news__page-img {
         width: 275px;
     }
+
     .news__page-hr {
         width: 144px;
     }
