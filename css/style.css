@@ -97,6 +97,7 @@ main {
 }
 
 .modal {
+    max-width: 625px;
     padding: 32px 42px;
     background-color: #F7F7F7;
     border: 2px solid #4F8FF0;
@@ -105,6 +106,10 @@ main {
 
 .active-modal {
     display: block;
+    position: absolute;
+    z-index: 100000000000000;
+    top: 20%;
+    left: 53%;
 }
 
 .modal__title {
@@ -119,7 +124,7 @@ main {
 .modal__form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
 }
 
 .form__name, .form__number {
@@ -146,7 +151,6 @@ input[type="text"], input[type="tel"] {
     padding: 6px 6px 6px 0px;
     border: none;
     background-color: #F7F7F7;
-
     outline: none;
     width: 100%;
 }
@@ -162,10 +166,6 @@ input::placeholder {
 
 input[type="text"]::placeholder {
     border-bottom: 1px solid #8C8C8C;
-}
-
-.form__agree {
-    width: 520px;
 }
 
 input[type="checkbox"] {
@@ -199,6 +199,7 @@ input[type="checkbox"] {
     font-weight: 900;
     line-height: 16px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 
