@@ -46,17 +46,17 @@
                 <div class="modal">
                     <h4 class="modal__title">Оставьте заявку</h4>
                     <form class="modal__form" action="" method="post">
-                        <div class="form__adress">
-                            <div class="form__name">
-                                <label class="form__label" for="name">Имя: </label>
-                                <input type="text" id="name" name="name" placeholder="Карина">
-                            </div>
-                            <div class="form__number">
-                                <label class="form__label" for="phone">Телефон:</label>
-                                <input id="phone" type="tel" name="phone" placeholder="(___)___-__-__"
-                                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-                            </div>
+                        <!-- <div class="form__adress"> -->
+                        <div class="form__name">
+                            <label class="form__label" for="name">Имя: </label>
+                            <input type="text" id="name" name="name" placeholder="Карина">
                         </div>
+                        <div class="form__number">
+                            <label class="form__label" for="phone">Телефон:</label>
+                            <input id="phone" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
+                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                        </div>
+                        <!-- </div> -->
                         <div class="form__agree">
                             <label for="" class="form__label-agree">
                                 <input type="checkbox" name="agree">Нажимая на кнопку, я принимаю условия <a
@@ -67,7 +67,7 @@
                             </label>
 
                         </div>
-                        <button type="submit" value="Отправить">Отправить</button>
+                        <button class="form__btn" type="submit" value="Отправить">Отправить</button>
                     </form>
                 </div>
             </div>

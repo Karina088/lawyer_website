@@ -100,6 +100,11 @@ main {
     padding: 32px 42px;
     background-color: #F7F7F7;
     border: 2px solid #4F8FF0;
+    display: none;
+}
+
+.active-modal {
+    display: block;
 }
 
 .modal__title {
@@ -117,6 +122,13 @@ main {
     gap: 16px;
 }
 
+.form__name, .form__number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .form__adress {
     display: flex;
     gap: 40px;
@@ -124,32 +136,40 @@ main {
 
 .form__label {
     color: #222222;
-    text-align: center;
+    text-align: end;
     font-size: 20px;
     font-weight: 400;
     line-height: 19px;
 }
 
 input[type="text"], input[type="tel"] {
-    padding: 6px;
+    padding: 6px 6px 6px 0px;
     border: none;
-    background-color: transparent;
+    background-color: #F7F7F7;
+
+    outline: none;
+    width: 100%;
 }
 
 input::placeholder {
-    padding: 4px;
+    padding: 4px 8px 4px 0px;
     color: #8C8C8C;
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
     border-bottom: 1px solid #8C8C8C;
 }
+
+input[type="text"]::placeholder {
+    border-bottom: 1px solid #8C8C8C;
+}
+
 .form__agree {
     width: 520px;
 }
 
 input[type="checkbox"] {
-margin-right: 8px;
+    margin-right: 8px;
 }
 
 .form__label-agree {
@@ -165,6 +185,20 @@ margin-right: 8px;
     font-weight: 400;
     line-height: 16px;
     text-decoration: underline;
+}
+
+.form__btn {
+    padding: 16px 24px;
+    border: 2px solid #4F8FF0;
+    background-color: #4F8FF0;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    text-transform: uppercase;
 }
 
 
