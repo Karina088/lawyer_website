@@ -302,8 +302,15 @@ input[type="checkbox"] {
     line-height: 16px;
     text-transform: uppercase;
     margin-top: 10px;
+    transition: all .4s ease-in-out;
 }
 
+.form__btn:hover {
+    border: 2px solid #4F8FF0;
+    background: #FFFFFF;
+    color: #4F8FF0;
+    cursor: pointer;
+}
 
 .main__menu {
     background-image: url(../img/header/menu__bg.svg);

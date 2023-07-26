@@ -506,8 +506,7 @@
 
     .modal__title {
         font-size: 22px;
-        line-height: 32px;
-        padding-bottom: 14px;
+        /* line-height: 32px; */
     }
 
     .form__label {
@@ -515,7 +514,7 @@
     }
 
     .modal__form {
-        gap: 21px;
+        /* gap: 21px; */
     }
 
     input[type="checkbox"] {
@@ -549,8 +548,8 @@
     }
 
     .modal {
-        max-width: 345px;
-        padding: 22px 22px;
+        max-width: 355px;
+        padding: 32px 22px;
     }
 
     .active-modal {
