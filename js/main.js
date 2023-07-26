@@ -16,6 +16,12 @@ burgerEl.addEventListener('click', () => {
 })
 
 const modalEl = document.querySelector('.modal')
+const modalClose = document.querySelector('.modal__close')
+
 document.querySelector('.top__menu_button').addEventListener('click', () => { 
+    modalEl.classList.toggle('active-modal')
+})
+
+modalClose.addEventListener('click', () => {
     modalEl.classList.toggle('active-modal')
 })

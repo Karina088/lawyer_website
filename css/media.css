@@ -25,6 +25,9 @@
 }
 
 @media (max-width: 1362px) {
+    .active-modal {
+        top: 20%;
+    }
 
     .main__content-par {
         width: 100%;
@@ -55,11 +58,6 @@
 @media (max-width: 1312px) {
     .about__company__img {
         display: none;
-    }
-
-    .active-modal {
-        top: 10%;
-        left: 60%;
     }
 
     .modal {
@@ -262,13 +260,6 @@
     }
 }
 
-@media (max-width: 1052px) {
-    .active-modal {
-        top: 10%;
-        left: 50%;
-    }
-}
-
 @media (max-width: 1024px) {
     .services__span {
         font-weight: 300;
@@ -309,13 +300,6 @@
         display: none;
     }
 
-}
-
-@media (max-width: 855px) {
-    .active-modal {
-        top: 20%;
-        left: 22%;
-    }
 }
 
 @media (max-width: 749px) {
@@ -513,10 +497,6 @@
         font-size: 16px;
     }
 
-    .modal__form {
-        /* gap: 21px; */
-    }
-
     input[type="checkbox"] {
         margin-right: 6px;
     }
@@ -550,11 +530,6 @@
     .modal {
         max-width: 355px;
         padding: 32px 22px;
-    }
-
-    .active-modal {
-        top: 20%;
-        left: 8%;
     }
 
     .reviews__icon {
@@ -631,11 +606,5 @@
 
     .news__date-hr {
         width: 140px;
-    }
-}
-
-@media (max-width: 338px) {
-    .active-modal {
-        left: 3%;
     }
 }
