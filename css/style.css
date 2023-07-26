@@ -159,7 +159,7 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 18px;
+    gap: 30px;
 }
 
 .form__name, .form__number {
@@ -197,6 +197,12 @@ input[type="text"], input[type="tel"] {
     background-color: #F7F7F7;
     outline: none;
     width: 100%;
+}
+
+.form__label::after {
+    content: '*';
+    color: #e61919;
+    margin-left: 2px;
 }
 
 input::-webkit-input-placeholder {
@@ -265,7 +271,7 @@ input[type="text"]::placeholder {
 }
 
 input[type="checkbox"] {
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 .form__label-agree {

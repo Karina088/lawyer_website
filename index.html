@@ -45,16 +45,16 @@
                     <h4 class="modal__title">Оставьте заявку</h4>
                     <form class="modal__form" action="" method="post">
                         <div class="form__name">
-                            <label class="form__label" for="name">Имя: </label>
-                            <input type="text" id="name" name="name" placeholder="Карина">
+                            <label class="form__label" for="name">Имя:</label>
+                            <input type="text" id="name" name="name" minlength="2" placeholder="Карина" required>
                         </div>
                         <div class="form__number">
                             <label class="form__label" for="phone">Телефон:</label>
                             <input id="phone" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
-                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                         </div>
                         <label for="" class="form__label-agree">
-                            <input type="checkbox" name="agree">Нажимая на кнопку, я принимаю условия <a
+                            <input type="checkbox" name="agree" required>Нажимая на кнопку, я принимаю условия <a
                                 class="form__link" href="#">Пользовательского соглашения</a> и даю согласие на
                             обработку моих персональных
                             данных.
