@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+.header-active {
+    opacity: 0.3;
+}
+
 a {
     color: #FFFFFF;
     text-decoration: none;

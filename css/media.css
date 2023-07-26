@@ -316,7 +316,7 @@
     }
 
     .main__content {
-        padding: 60px 24px;
+        padding: 70px 24px;
     }
 
     .main__content-subtitle {
@@ -572,6 +572,10 @@
 
     .top__menu_button {
         font-size: 13px;
+    }
+
+    .main__content {
+        padding: 60px 24px;
     }
 
     .news__card {

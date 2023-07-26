@@ -17,11 +17,17 @@ burgerEl.addEventListener('click', () => {
 
 const modalEl = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal__close')
+const headerEl = document.querySelector('header')
+
+function toggleActiveModal() {
+    modalEl.classList.toggle('active-modal')
+    headerEl.classList.toggle('header-active')
+}
 
 document.querySelector('.top__menu_button').addEventListener('click', () => { 
-    modalEl.classList.toggle('active-modal')
+    toggleActiveModal()
 })
 
 modalClose.addEventListener('click', () => {
-    modalEl.classList.toggle('active-modal')
+    toggleActiveModal()
 })
