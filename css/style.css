@@ -146,7 +146,7 @@ main {
 .active-modal {
     display: block;
     position: absolute;
-    z-index: 100000000000000;
+    z-index: 10000;
     margin: 0 auto;
     width: auto;
     top: 30%;
@@ -199,7 +199,7 @@ main {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 14px;
 }
 
 .form__adress {
@@ -218,7 +218,8 @@ main {
 }
 
 input[type="text"], input[type="tel"] {
-    padding: 6px 6px 6px 0px;
+    padding: 8px;
+    /* padding: 6px 6px 6px 0px; */
     border: none;
     background-color: #F7F7F7;
     outline: none;
