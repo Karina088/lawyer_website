@@ -18,19 +18,18 @@ burgerEl.addEventListener('click', () => {
 const modalEl = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal__close')
 const headerEl = document.querySelector('header')
-const allNewsEl = document.querySelector('.all_news')
+const mainEl = document.querySelector('main')
 
-function toggleActiveModalNews() {
+function toggleActiveModal() {
     modalEl.classList.toggle('active-modal')
     headerEl.classList.toggle('header-active')
-    allNewsEl.classList.toggle('header-active')
+    mainEl.classList.toggle('header-active')
 }
 
 document.querySelector('.top__menu_button').addEventListener('click', () => { 
-    toggleActiveModalNews()
+    toggleActiveModal()
 })
 
 modalClose.addEventListener('click', () => {
-    toggleActiveModalNews()
+    toggleActiveModal()
 })
-
