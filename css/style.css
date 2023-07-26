@@ -206,6 +206,7 @@ input[type="text"], input[type="tel"] {
     background-color: #F7F7F7;
     outline: none;
     width: 100%;
+    border-bottom: 1px solid #8C8C8C;
 }
 
 .form__label::after {
@@ -220,7 +221,6 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    border-bottom: 1px solid #8C8C8C;
 }
 
 input::-moz-placeholder {
@@ -229,7 +229,6 @@ input::-moz-placeholder {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    border-bottom: 1px solid #8C8C8C;
 }
 
 input:-ms-input-placeholder {
@@ -238,7 +237,6 @@ input:-ms-input-placeholder {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    border-bottom: 1px solid #8C8C8C;
 }
 
 input::-ms-input-placeholder {
@@ -247,7 +245,6 @@ input::-ms-input-placeholder {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    border-bottom: 1px solid #8C8C8C;
 }
 
 input::placeholder {
@@ -256,27 +253,6 @@ input::placeholder {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    border-bottom: 1px solid #8C8C8C;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-    border-bottom: 1px solid #8C8C8C;
-}
-
-input[type="text"]::-moz-placeholder {
-    border-bottom: 1px solid #8C8C8C;
-}
-
-input[type="text"]:-ms-input-placeholder {
-    border-bottom: 1px solid #8C8C8C;
-}
-
-input[type="text"]::-ms-input-placeholder {
-    border-bottom: 1px solid #8C8C8C;
-}
-
-input[type="text"]::placeholder {
-    border-bottom: 1px solid #8C8C8C;
 }
 
 input[type="checkbox"] {
