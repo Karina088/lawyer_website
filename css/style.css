@@ -980,6 +980,7 @@ input[type="checkbox"] {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+    hyphens: auto;
 }
 
 .reviews__links {
@@ -1179,7 +1180,7 @@ news__img-mountains {
 }
 
 .footer__item {
-    text-align: flex-start;
+    text-align: start;
     gap: 24px;
 }
 
