@@ -36,8 +36,6 @@ modalClose.addEventListener('click', () => {
 })
 
 
-
-
 const modalFooterEl = document.querySelector('.modal__footer')
 const modalFooterClose = document.querySelector('.modal__footer-close')
 const footerEl = document.querySelector('footer')
@@ -55,4 +53,35 @@ document.querySelector('.footer__btn').addEventListener('click', () => {
 modalFooterClose.addEventListener('click', () => {
     toggleActiveModalFooter()
 })
+
+
+// validation form textarea 
+const textareaEl = document.querySelector('textarea')
+const formFooter = document.querySelector('.modal__footer')
+
+formFooter.addEventListener('submit', (e) => {
+    e.preventDefault()
+     // присваиваем value то, что введено пользователем в форму:
+     const value = textareaEl.value;
+
+     // Проверка чтобы поле не было пустое
+     if (!value.trim()) {
+       alert('Error!');
+       return;
+     }
+ 
+     //Проверка не более двух переносов строки:
+     if (/\n.*\n.*\n/.test(value)) {
+       alert('Error!');
+       return;
+     }
+ 
+     //Дальше можете добавить сколько угодно if и проверять что вас еще 
+     //интересует
+ 
+     // Если все if успешны:
+     formFooter.submit();
+   
+})
+
 
