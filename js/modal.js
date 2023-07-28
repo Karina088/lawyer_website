@@ -20,6 +20,7 @@ const modalClose = document.querySelector('.modal__close')
 const headerEl = document.querySelector('header')
 const mainEl = document.querySelector('main')
 
+
 function toggleActiveModal() {
     modalEl.classList.toggle('active-modal')
     headerEl.classList.toggle('header-active')
@@ -33,3 +34,25 @@ document.querySelector('.top__menu_button').addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     toggleActiveModal()
 })
+
+
+
+
+const modalFooterEl = document.querySelector('.modal__footer')
+const modalFooterClose = document.querySelector('.modal__footer-close')
+const footerEl = document.querySelector('footer')
+
+function toggleActiveModalFooter() {
+    modalFooterEl.classList.toggle('active-footer')
+    footerEl.classList.toggle('footer-active')
+    mainEl.classList.toggle('footer-active')
+}
+
+document.querySelector('.footer__btn').addEventListener('click', () => { 
+    toggleActiveModalFooter()
+})
+
+modalFooterClose.addEventListener('click', () => {
+    toggleActiveModalFooter()
+})
+

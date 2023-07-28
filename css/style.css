@@ -147,6 +147,28 @@ main {
     display: none;
 }
 
+.modal__footer {
+    display: none;
+    max-width: 625px;
+    padding: 40px 42px;
+    background-color: #F7F7F7;
+    border: 2px solid #4F8FF0;
+
+}
+
+.active-footer {
+    display: block;
+    z-index: 10000;
+    position: fixed;
+    bottom: 21%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.footer-active {
+    opacity: 0.3;
+}
+
 .active-modal {
     display: block;
     position: absolute;
@@ -171,6 +193,13 @@ main {
     cursor: pointer;
 }
 
+.modal__footer-close {
+    display: block;
+    position: absolute;
+    left: 91%;
+    top: 2%;
+    cursor: pointer;
+}
 
 .modal__title {
     color: #222222;
@@ -179,6 +208,14 @@ main {
     line-height: 42px;
     text-transform: uppercase;
     padding-bottom: 24px;
+}
+
+.modal__footer-title {
+    color: #222222;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
 .modal__form {
@@ -191,6 +228,80 @@ main {
     flex-direction: column;
     gap: 30px;
 }
+
+.form__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__footer {
+    padding-top: 22px;
+}
+
+.modal__footer-figure {
+    padding: 14px 0px;
+}
+
+.footer__figcaption {
+    color: #222222;
+}
+
+.footer__figcaption span {
+    width: 320px;
+}
+
+.form__footer-question textarea {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #4F8FF0;
+    resize: none;
+    color: rgb(140, 140, 140);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.4px;
+    padding: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #222222;
+}
+
+textarea::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+.form__footer-contacts {
+    display: flex;
+    gap: 14px;
+    flex: 1 1 auto;
+}
+
+.form__footer-name, .form__footer-number {
+    width: 100%;
+}
+
+#footer-name, #footer-phone {
+    border: 1px solid #4F8FF0;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.4px;
+    padding: 12px;
+    color: #222222;
+}
+
 
 .form__name, .form__number {
     display: -webkit-box;
@@ -223,7 +334,6 @@ main {
 
 input[type="text"], input[type="tel"] {
     padding: 8px;
-    /* padding: 6px 6px 6px 0px; */
     border: none;
     background-color: #F7F7F7;
     outline: none;
@@ -310,6 +420,10 @@ input[type="checkbox"] {
     text-transform: uppercase;
     margin-top: 10px;
     transition: all .4s ease-in-out;
+}
+
+.footer-btn {
+    border-radius: 6px;
 }
 
 .form__btn:hover {
