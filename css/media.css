@@ -1,5 +1,7 @@
 @media (max-width: 1920px) {
     .reviews__links {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding-left: 0px;
     }
@@ -8,6 +10,8 @@
 @media (max-width: 1452px) {
     .reviews__links {
         padding-left: 0px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 
@@ -187,6 +191,8 @@
     }
 
     .footer__top {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: start;
         width: 100%;
         padding-bottom: 24px;
@@ -207,7 +213,10 @@
     .footer__connection-link {
         font-size: 14px;
         line-height: 21px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         width: 160px;
     }
@@ -219,11 +228,16 @@
 
 @media (max-width: 1142px) {
     .menu__burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .main__menu__nav {
         display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         position: fixed;
         width: 100%;
@@ -236,17 +250,33 @@
         overflow-y: auto;
         background-color: #222222;
         padding: 50px 26px;
+        -webkit-animation: burgerAnimation .5s;
         animation: burgerAnimation .5s;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
     }
 
     .main__menu-list {
         gap: 24px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .main__menu-list>li>a {
         font-size: 16px;
+    }
+
+    @-webkit-keyframes burgerAnimation {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
     }
 
     @keyframes burgerAnimation {
@@ -463,7 +493,11 @@
         padding: 11px 10px 10px 10px;
         width: 45px;
         height: 45px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -479,7 +513,7 @@
     .modal__footer-title {
         font-size: 21px;
         line-height: 30px;
-        word-wrap: break-word; 
+        word-wrap: break-word;
     }
 
     .modal__footer-figure {
@@ -491,10 +525,17 @@
     }
 
     .copyright__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         gap: 8px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 }
@@ -523,6 +564,8 @@
     }
 
     .footer__top {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -531,8 +574,15 @@
     }
 
     .footer__main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -547,8 +597,15 @@
 
 @media (max-width: 462px) {
     .about__company__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -560,6 +617,7 @@
     .form__footer-contacts {
         gap: 4px;
     }
+
     .reviews__icon {
         display: none;
     }
@@ -569,8 +627,15 @@
     }
 
     .reviews__links {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
