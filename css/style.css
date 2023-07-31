@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 * {
@@ -162,7 +169,9 @@ main {
     position: fixed;
     bottom: 21%;
     left: 60%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .footer-active {
@@ -181,8 +190,13 @@ main {
 }
 
 .modal__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 .modal__close {
@@ -272,6 +286,42 @@ main {
     color: #222222;
 }
 
+textarea::-webkit-input-placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+textarea::-moz-placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+textarea:-ms-input-placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+textarea::-ms-input-placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
 textarea::placeholder {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
@@ -282,9 +332,13 @@ textarea::placeholder {
 }
 
 .form__footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 14px;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 .form__footer-name, .form__footer-number {
@@ -419,6 +473,8 @@ input[type="checkbox"] {
     line-height: 16px;
     text-transform: uppercase;
     margin-top: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
@@ -434,18 +490,13 @@ input[type="checkbox"] {
 }
 
 .main__menu {
-    background-image: url(../img/header/menu__bg.svg);
+    background-image: url(../img/header/menu__bg.webp);
     background-size: cover;
 }
 
 .main__menu__content {
     background-color: rgba(1, 1, 1, 0.76);
     padding: 20px 69px 28px 69px;
-    /* position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100000;
-    transition: all .3s ease; */
 }
 
 .main__menu-container {
@@ -1094,7 +1145,9 @@ input[type="checkbox"] {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
-    hyphens: auto;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
 }
 
 .reviews__links {
