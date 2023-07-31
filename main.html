@@ -402,7 +402,7 @@
             </div>
             <div class="form__number">
                 <label class="form__label" for="phone">Телефон:</label>
-                <input id="phone" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
+                <input id="phone" class="tel" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
                     pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
             </div>
             <div class="form__agree">
@@ -444,11 +444,10 @@
             </div>
             <div class="form__footer-contacts">
                 <div class="form__footer-name">
-                    <input type="text" id="footer-name" name="name" minlength="2" placeholder="Ваше имя" required>
+                    <input type="text" id="footer-name"  name="name" minlength="2" placeholder="Ваше имя" required>
                 </div>
                 <div class="form__footer-number">
-                    <input id="footer-phone" type="tel" name="phone" placeholder="Телефон"
-                        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    <input id="footer-phone" class="tel" type="tel" name="phone" placeholder="Телефон" required>
                 </div>
             </div>
             <button class="form__btn footer-btn" type="submit" value="Отправить вопрос">Отправить вопрос</button>
