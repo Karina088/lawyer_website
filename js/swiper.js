@@ -1,3 +1,28 @@
+const swiperServices = new Swiper('.swiper__services', {
+  direction: 'horizontal',
+  loop: false,
+
+  slidesPerView: 3,
+  spaceBetween: 24,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    760: {
+      slidesPerView: 3,
+    },
+      1360: {
+        slidesPerView: 4,
+      }
+    },
+
+    mousewheel: {
+      forceToAxis: true,
+    },  
+})
+
+
+
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
