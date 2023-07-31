@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function() {
             new_value = matrix.replace(/[_\d]/g, function(a) {
                 return i < val.length ? val.charAt(i++) || def.charAt(i) : a
             })
-        i = new_value.indexOf("_");
+        i = new_value.indexOf("_")
         if (i != -1) {
             i < 5 && (i = 3)
             new_value = new_value.slice(0, i)
