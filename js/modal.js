@@ -61,27 +61,18 @@ const formFooter = document.querySelector('.modal__footer')
 
 formFooter.addEventListener('submit', (e) => {
     e.preventDefault()
-     // присваиваем value то, что введено пользователем в форму:
      const value = textareaEl.value;
 
-     // Проверка чтобы поле не было пустое
      if (!value.trim()) {
-       alert('Error!');
+       alert('Пожалуйста, заполните тему вопроса!!');
        return;
      }
- 
-     //Проверка не более двух переносов строки:
-     if (/\n.*\n.*\n/.test(value)) {
-       alert('Error!');
+     if (/\n.*\n.*\n.*\n/.test(value)) {
+       alert('Будьте добры, изложите свой вопрос в менее длинной форме!');
        return;
      }
- 
-     //Дальше можете добавить сколько угодно if и проверять что вас еще 
-     //интересует
- 
-     // Если все if успешны:
+
      formFooter.submit();
-   
 })
 
 
