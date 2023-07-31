@@ -34,3 +34,42 @@ modalClose.addEventListener('click', () => {
     toggleActiveModalNews()
 })
 
+const modalFooterEl = document.querySelector('.modal__footer')
+const modalFooterClose = document.querySelector('.modal__footer-close')
+const footerEl = document.querySelector('footer')
+
+function toggleActiveModalFooter() {
+    modalFooterEl.classList.toggle('active-footer')
+    footerEl.classList.toggle('footer-active')
+    mainEl.classList.toggle('footer-active')
+}
+
+document.querySelector('.footer__btn').addEventListener('click', () => { 
+    toggleActiveModalFooter()
+})
+
+modalFooterClose.addEventListener('click', () => {
+    toggleActiveModalFooter()
+})
+
+
+// validation form textarea 
+const textareaEl = document.querySelector('textarea')
+const formFooter = document.querySelector('.modal__footer')
+
+formFooter.addEventListener('submit', (e) => {
+    e.preventDefault()
+     const value = textareaEl.value;
+
+     if (!value.trim()) {
+       alert('Пожалуйста, заполните тему вопроса!!');
+       return;
+     }
+     if (/\n.*\n.*\n.*\n/.test(value)) {
+       alert('Будьте добры, изложите свой вопрос в менее длинной форме!');
+       return;
+     }
+
+     formFooter.submit();
+})
+
