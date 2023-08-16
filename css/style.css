@@ -12,10 +12,15 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     overflow-x: hidden;
+    text-wrap: balance;
 }
 
 .header-active {
     opacity: 0.3;
+}
+
+.body-active {
+    overflow: hidden;
 }
 
 a {
@@ -156,8 +161,8 @@ main {
     bottom: 21%;
     left: 60%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .footer-active {
@@ -181,8 +186,8 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
 }
 
 .modal__close {
@@ -323,8 +328,8 @@ textarea::placeholder {
     display: flex;
     gap: 14px;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .form__footer-name, .form__footer-number {
@@ -1132,8 +1137,8 @@ input[type="checkbox"] {
     font-weight: 400;
     line-height: 150%;
     -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .reviews__links {

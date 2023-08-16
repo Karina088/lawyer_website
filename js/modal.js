@@ -18,12 +18,14 @@ burgerEl.addEventListener('click', () => {
 const modalEl = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal__close')
 const headerEl = document.querySelector('header')
+const bodyEl = document.querySelector('body')
 const mainEl = document.querySelector('main')
 
 
 function toggleActiveModal() {
     modalEl.classList.toggle('active-modal')
     headerEl.classList.toggle('header-active')
+    bodyEl.classList.toggle('body-active')
     mainEl.classList.toggle('header-active')
 }
 
@@ -43,6 +45,7 @@ const footerEl = document.querySelector('footer')
 function toggleActiveModalFooter() {
     modalFooterEl.classList.toggle('active-footer')
     footerEl.classList.toggle('footer-active')
+    bodyEl.classList.toggle('body-active')
     mainEl.classList.toggle('footer-active')
 }
 
