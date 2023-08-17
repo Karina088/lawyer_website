@@ -37,8 +37,15 @@
                 </div>
 
                 <div class="top__menu-btn">
-                    <button class="top__menu_button" type="button">Заказать звонок</button>
-
+                    <div>
+                        <button class="top__menu_button" type="button">Заказать звонок</button>
+                    </div>
+                    <div class="top__theme">
+                        <label id="switch" class="switch">
+                            <input type="checkbox" onchange="toggleTheme()" id="slider">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -444,7 +451,7 @@
             </div>
             <div class="form__footer-contacts">
                 <div class="form__footer-name">
-                    <input type="text" id="footer-name"  name="name" minlength="2" placeholder="Ваше имя" required>
+                    <input type="text" id="footer-name" name="name" minlength="2" placeholder="Ваше имя" required>
                 </div>
                 <div class="form__footer-number">
                     <input id="footer-phone" class="tel" type="tel" name="phone" placeholder="Телефон" required>
