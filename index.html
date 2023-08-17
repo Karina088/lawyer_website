@@ -38,7 +38,16 @@
                 </div>
 
                 <div class="top__menu-btn">
-                    <button class="top__menu_button" type="button">Заказать звонок</button>
+                    <div>
+                        <button class="top__menu_button" type="button">Заказать звонок</button>
+                    </div>
+
+                    <div class="top__theme">
+                        <label id="switch" class="switch">
+                            <input type="checkbox" onchange="toggleTheme()" id="slider">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
 
 
@@ -803,6 +812,7 @@
         </div>
     </footer>
 
+    <script src="./js/theme.js"></script>
     <script src="./js/menuEl.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/wow.min.js"></script>

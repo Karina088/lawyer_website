@@ -58,7 +58,6 @@
     }
 }
 
-
 @media (width <=1312px) {
     .about__company__img {
         display: none;
@@ -81,7 +80,6 @@
     }
 
     .news {
-        background-color: #FFFFFF;
         padding: 80px 0px 80px 69px;
     }
 
