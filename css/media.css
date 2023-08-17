@@ -663,6 +663,10 @@
         padding: 22px 14px;
     }
 
+    .top__menu-btn {
+        gap: 8px;
+    }
+
     .modal__footer {
         max-width: 302px;
         padding: 22px 14px;
