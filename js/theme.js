@@ -1,3 +1,9 @@
+
+window.addEventListener('load',function(){
+    document.querySelector('body').classList.add("loaded")  
+  })
+
+
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName)
     document.documentElement.className = themeName
