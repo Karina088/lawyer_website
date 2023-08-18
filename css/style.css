@@ -266,7 +266,7 @@ input:checked+.slider:before {
 
 .active-footer {
     display: block;
-    z-index: 10000;
+    z-index: 60000;
     position: fixed;
     bottom: 21%;
     left: 60%;
@@ -373,7 +373,7 @@ input:checked+.slider:before {
 
 .form__footer-question textarea {
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
     border-radius: 6px;
     border: 1px solid #4F8FF0;
     resize: none;
@@ -447,7 +447,7 @@ textarea::placeholder {
 #footer-name, #footer-phone {
     border: 1px solid #4F8FF0;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
     font-size: 14px;
     font-weight: 400;
     line-height: 14.4px;
@@ -492,6 +492,7 @@ input[type="text"], input[type="tel"] {
     outline: none;
     width: 100%;
     border-bottom: 1px solid #8C8C8C;
+    color: var(--font-color);
 }
 
 .form__label::after {
