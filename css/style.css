@@ -1517,6 +1517,41 @@ news__img-mountains {
     padding-top: 48px;
 }
 
+
+/* btn arrow up */
+
+.btn__up{
+    position: fixed;
+    border-top: 3px solid #4F8FF0;
+    border-left: 3px solid #4F8FF0;
+    border-right: 3px solid #4F8FF0;
+    background-color: transparent;
+    right: 20px;
+    bottom: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn__up:before {
+    content: '';
+    background-image: url(../img/arrowUp/up-chevron.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.hide {
+    display: none;
+}
+
 .footer {
     padding: 80px 69px;
     background-color: #222222;

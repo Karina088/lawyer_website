@@ -1,3 +1,9 @@
+@media (hover: hover) {
+    .btn__up:hover {
+        background-color:  rgba(1, 1, 1, 0.76);
+    }
+}
+
 @media (width <=1920px) {
     .reviews__links {
         -webkit-box-pack: center;
