@@ -1,6 +1,6 @@
 @media (hover: hover) {
     .btn__up:hover {
-        background-color:  rgba(1, 1, 1, 0.76);
+        background-color: rgba(1, 1, 1, 0.76);
     }
 }
 
@@ -104,6 +104,10 @@
     .loader {
         width: 100px;
         height: 100px;
+    }
+
+    .loader {
+        left: 55%;
     }
 
     main {
