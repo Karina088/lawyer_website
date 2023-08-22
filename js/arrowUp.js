@@ -8,8 +8,8 @@ const btnUp = {
     },
     addEventListener() {
       window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY || document.documentElement.scrollTop;
-        scrollY > 400 ? this.show() : this.hide();
+        const scrollY = window.scrollY || document.documentElement.scrollTop
+        scrollY > 400 ? this.show() : this.hide()
       })
       document.querySelector('.btn__up').addEventListener('click', () => {
         window.scrollTo({

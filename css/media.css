@@ -192,13 +192,12 @@
 
     .btn__up {
         right: 12px;
-        width: 30px;
-        height: 30px;
+        width: 46px;
     }
 
     .btn__up:before {
-        width: 18px;
-        height: 18px;
+        width: 24px;
+        height: 24px;
     }
 
     .footer {
