@@ -190,6 +190,17 @@
         margin: 0 69px 0 0;
     }
 
+    .btn__up {
+        right: 12px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn__up:before {
+        width: 18px;
+        height: 18px;
+    }
+
     .footer {
         padding: 60px 69px;
     }
