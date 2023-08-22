@@ -1,4 +1,4 @@
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .btn__up:hover {
         background-color: rgba(1, 1, 1, 0.76);
     }
