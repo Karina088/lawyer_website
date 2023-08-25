@@ -15,10 +15,21 @@ burgerEl.addEventListener('click', () => {
     document.querySelector('.main__menu__nav').classList.toggle('open')
 })
 
+
+const linkMenuEl = document.querySelectorAll('.link-active')
+console.log(linkMenuEl)
+
+linkMenuEl.forEach( el => el.addEventListener('click', () => {
+        setTimeout(() => 
+        document.querySelector('.main__menu__nav').classList.remove('open')
+    , 2000) 
+    burgerEl.classList.remove('active')
+}))
+   
 const modalEl = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal__close')
 const headerEl = document.querySelector('header')
-const bodyEl = document.querySelector('body')
+const bodyEl = document.body
 const mainEl = document.querySelector('main')
 
 
