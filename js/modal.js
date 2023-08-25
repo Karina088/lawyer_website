@@ -22,7 +22,7 @@ const linkMenuEl = document.querySelectorAll('.link-active')
 linkMenuEl.forEach( el => el.addEventListener('click', () => {
         setTimeout(() => 
         menuNavEl.classList.remove('open')
-    , 2000) 
+    , 1000) 
     burgerEl.classList.remove('active')
 }))
    
