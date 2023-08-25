@@ -10,10 +10,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })
 
 const burgerEl = document.querySelector('.menu__burger')
+const menuNavEl = document.querySelector('.main__menu__nav')
 burgerEl.addEventListener('click', () => {
     burgerEl.classList.toggle('active')
-    document.querySelector('.main__menu__nav').classList.toggle('open')
+    menuNavEl.classList.toggle('open')
 })
+
+const linkMenuEl = document.querySelectorAll('.link-active')
+
+linkMenuEl.forEach( el => el.addEventListener('click', () => {
+        setTimeout(() => 
+        menuNavEl.classList.remove('open')
+    , 1000) 
+    burgerEl.classList.remove('active')
+}))
 
 const modalEl = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal__close')
