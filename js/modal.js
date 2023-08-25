@@ -10,18 +10,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })
 
 const burgerEl = document.querySelector('.menu__burger')
+const menuNavEl = document.querySelector('.main__menu__nav')
+
 burgerEl.addEventListener('click', () => {
     burgerEl.classList.toggle('active')
-    document.querySelector('.main__menu__nav').classList.toggle('open')
+    menuNavEl.classList.toggle('open')
 })
 
-
 const linkMenuEl = document.querySelectorAll('.link-active')
-console.log(linkMenuEl)
 
 linkMenuEl.forEach( el => el.addEventListener('click', () => {
         setTimeout(() => 
-        document.querySelector('.main__menu__nav').classList.remove('open')
+        menuNavEl.classList.remove('open')
     , 2000) 
     burgerEl.classList.remove('active')
 }))
@@ -31,7 +31,6 @@ const modalClose = document.querySelector('.modal__close')
 const headerEl = document.querySelector('header')
 const bodyEl = document.body
 const mainEl = document.querySelector('main')
-
 
 function toggleActiveModal() {
     modalEl.classList.toggle('active-modal')
