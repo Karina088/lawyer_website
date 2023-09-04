@@ -6,4 +6,4 @@
 - модальные окна с проверкой всех инпутов как на стороне клиента, так и с помощью JS, в том числе, использование регулярных выражений;
 - применяла библиотеку swiper-bundle для свайперов, кастомизирован, расширяла компоненты для каждого из свайперов;
 - учла результаты по PageSpeed
- ![Speed](https://github.com/Karina088/lawyer_website/raw/master/github__img/pagespeed.png)
+ ![Speed](https://github.com/Karina088/lawyer_website/raw/main/github__img/pagespeed.png)
