@@ -21,26 +21,3 @@ const btnUp = {
     }
  } 
   btnUp.addEventListener()
-
-
-  /*
-  const windowHeight = window.innerHeight
-  const windowWidth = window.innerWidth
-  console.log(`Ширина окна браузера: ${windowWidth}px`)
-  console.log(`Высота окна браузера: ${windowHeight}px`)
-
-  console.log(`Информация о самом браузере: ${navigator.userAgent} `)
-  // console.log(`OC: ${navigator.platform}`)
-console.log(location.href)
-
-const bodyElement = document.body
-const firstChildNode = bodyElement.firstChild
-const lastChildNode = bodyElement.lastChild
-console.log(firstChildNode)
-console.log(lastChildNode)
-const childNodes = bodyElement.childNodes
-console.log(childNodes)
-
-for (let node of childNodes) {
-  console.log(node) // покажет все узлы из коллекции 
-}*/
