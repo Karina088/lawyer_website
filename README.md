@@ -1,4 +1,4 @@
-# Сайт [перейти](https://karina088.github.io/lawyer_website/index.html)
+# Сайт [Правозащитник - юридическая компания](https://karina088.github.io/lawyer_website/index.html)
 
 ### Применяла: 
 - HTML5 / CSS3 / JS
