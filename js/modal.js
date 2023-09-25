@@ -124,3 +124,26 @@ window.addEventListener("DOMContentLoaded", function() {
     input.addEventListener("keydown", mask, false)
   })
 })
+
+document.querySelector('.form__footer').addEventListener('submit', function(event) {
+    event.preventDefault()
+  
+    const formData = new FormData(event.target)
+    const request = new Request('/php/request.php', {
+      method: 'POST',
+      body: formData
+    })
+
+    fetch(request)
+      .then(response => {
+        if (response.ok) {
+          return response.text()
+        } else {
+          throw new Error('Ошибка сервера!')
+        }
+      })
+      .then(data => {
+        console.log(data)
+      })
+      .catch(error => console.log('Возникла ошибка!', error))
+  })
