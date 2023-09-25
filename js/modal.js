@@ -125,7 +125,7 @@ window.addEventListener("DOMContentLoaded", function() {
   })
 })
 
-document.querySelector('.form__footer').addEventListener('submit', function(event) {
+document.querySelector('.modal__form').addEventListener('submit', function(event) {
     event.preventDefault()
   
     const formData = new FormData(event.target)

@@ -4,12 +4,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($_POST)) {
         echo 'Ошибка: Данные не были отправлены';
     } else {
-        $texarea = $_POST['texarea'];
         $name = $_POST['name'];
         $email = $_POST['email'];
 
         // Обрабатываем данные
-        if ($name && $email && $texarea) {
+        if ($name && $email && $textarea) {
             echo 'Спасибо за ваше сообщение!';
         } else {
             echo 'Ошибка: Пожалуйста, заполните все поля';
