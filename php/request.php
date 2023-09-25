@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = $_POST['email'];
 
         // Обрабатываем данные
-        if ($name && $email && $textarea) {
+        if ($name && $email) {
             echo 'Спасибо за ваше сообщение!';
         } else {
             echo 'Ошибка: Пожалуйста, заполните все поля';
